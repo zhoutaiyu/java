@@ -1,0 +1,38 @@
+[
+  {
+    "codes": "public class BinarySearchTree { ",
+    "blocks": []
+  },
+  {
+    "codes": "\tpublic static  Node root; ",
+    "blocks": []
+  },
+  {
+    "codes": "\tpublic BinarySearchTree(){ ",
+    "blocks": []
+  },
+  {
+    "codes": "\t\tthis.root = null; ",
+    "blocks": [0]
+  },
+  {
+    "codes": "\t} ",
+    "blocks": []
+  },
+  {
+    "codes": "\t ",
+    "blocks": []
+  },
+  {
+    "codes": "\tpublic boolean find(int id){ ",
+    "blocks": []
+  },
+  {
+    "codes": "\t\tNode current = root; ",
+    "blocks": []
+  },
+  {
+    "codes": "\t\twhile(current!=null){ ",
+    "blocks": []
+  }
+]

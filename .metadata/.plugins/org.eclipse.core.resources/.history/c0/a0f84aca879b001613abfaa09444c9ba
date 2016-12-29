@@ -1,0 +1,16 @@
+
+public class Walkman implements Soundable {
+
+	@Override
+	public void sounding() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void volume(char c) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

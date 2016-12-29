@@ -1,0 +1,18 @@
+import java.util.ArrayList;
+
+public class SelfServer extends Server {
+	private ArrayList<Account> list;
+	
+	SelfServer(){
+		super();	
+		}
+
+	public ArrayList<Account> getList() {
+		return list;
+	}
+
+	public void setList(ArrayList<Account> list) {
+		this.list = list;
+	}
+
+}

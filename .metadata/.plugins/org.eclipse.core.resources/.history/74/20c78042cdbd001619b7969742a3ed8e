@@ -1,0 +1,12 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ATMServer a=new ATMServer();
+		if(a.login()==true)
+		a.meue();//²Ëµ¥
+		
+	}
+
+}

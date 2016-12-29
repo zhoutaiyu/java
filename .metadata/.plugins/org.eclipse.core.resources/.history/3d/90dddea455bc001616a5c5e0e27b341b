@@ -1,0 +1,66 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class ATM {
+	private ArrayList<Account> list = new ArrayList();
+	//private String CurrentId;
+	//private String CurrentPassword;
+	private Account CurrentAccount=null;
+	Scanner input =new Scanner(System.in);
+
+	//添加用户信息
+	public ATM(){
+		Account a1=new Account("201501","hello",1000,"123456");
+		Account a2=new Account("201502","kitty",1000.0,"123456");
+		Account a3=new Account("201503","马克思",1500,"123456");
+		Account a4=new Account("201504","恩格斯",1500,"123456");
+		Account a5=new Account("201505","图灵",5000,"123456");
+		Account a6=new Account("201506","雨果",5000,"123456");
+		list.add(a1);
+		list.add(a2);
+		list.add(a3);
+		list.add(a4);
+		list.add(a5);
+		list.add(a6);
+	}
+	public void select(){
+		while(true){
+			System.out.println("***1.查询个人信息***");
+			System.out.println("***2.   存款          ***");
+			System.out.println("***3.   取款          ***");
+			System.out.println("***4.  修改密码     ***");
+			System.out.println("***5.   转账          ***");
+			System.out.println("***6.   退出          ***");
+			System.out.println("请输入您想进行操作序号");
+			switch(input.nextInt()){
+			
+			case 1:System.out.println(CurrentAccount.toString());
+			break;
+			
+			case 2:
+				break;
+				
+			case 3:
+				Business c=new WithDraw(this.CurrentAccount);
+				c.withDraw(500);
+			break;
+				//密码修改
+			case 4:
+				
+				break;
+				
+			case 5:
+				
+				break;
+			case 6:
+				input.close();
+				System.out.println("欢迎您的使用，再见");
+				System.exit(0);
+			}
+	}
+	}
+	business a=new WithDraw(this.CurrentAccount);
+	
+	
+
+}

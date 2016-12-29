@@ -1,0 +1,59 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Login {
+
+	private ArrayList<Account> list = new ArrayList<Account>();
+	private String currentId;
+	private String currentPassword;
+	private Account currentAccount;
+	Scanner input = new Scanner(System.in);
+
+	Login() {
+		Account a1 = new Account("201501", "hello", 1000, "123456");
+		Account a2 = new Account("201502", "kitty", 1000.0, "123456");
+		Account a3 = new Account("201503", "马克思", 1500, "123456");
+		Account a4 = new Account("201504", "恩格斯", 1500, "123456");
+		Account a5 = new Account("201505", "图灵", 5000, "123456");
+		Account a6 = new Account("201506", "雨果", 5000, "123456");
+		list.add(a1);
+		list.add(a2);
+		list.add(a3);
+		list.add(a4);
+		list.add(a5);
+		list.add(a6);
+	}
+
+	public Account enter() {
+
+		int i = 0;
+		System.out.println("*****欢迎来到皇家银行，我是ATM机小亮");
+		System.out.println("请输入您的账号");
+		currentId = input.next();
+		if (new Query().query(currentId) != false) {
+			System.out.println(currentId);
+			Out: for (i = 1; i <= 3; i++) {
+				System.out.println("请输入密码");
+				currentPassword = input.next();
+				System.out.println(currentPassword);
+				for (Account a : list) {
+					if (currentId.equals(a.getID()) && currentPassword.equals(a.getPassword())) {
+						currentAccount = a;
+						break Out;
+					}
+				}
+			}
+			if (i == 4)
+				System.out.println("***三次密码输入错误，你的卡已被锁定***");
+			else
+				System.out.println("***登陆成功，皇家欢迎您***");
+		}
+			return currentAccount;
+		}
+
+	public ArrayList<Account> getList() {
+		// TODO Auto-generated method stub
+		return this.list;
+	}
+
+}

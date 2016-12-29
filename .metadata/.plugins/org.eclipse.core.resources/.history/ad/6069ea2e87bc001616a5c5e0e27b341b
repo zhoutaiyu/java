@@ -1,0 +1,12 @@
+public class ModPassword extends Business{
+	private Account currentAccount;
+	
+	ModPassword(Account account) {
+		this.currentAccount = account;
+	}
+
+	public void modify(String password){
+		currentAccount.setPassword(password);
+		System.out.println("ÃÜÂëĞŞ¸Ä³É¹¦");
+	}
+}

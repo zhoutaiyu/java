@@ -1,0 +1,13 @@
+
+public class NewAccount  extends ManualServer{
+
+	NewAccount(boolean isIce) {
+		super(isIce);
+	}
+	
+	public void newAccount(String ID,String name,double balance,String password){
+		this.getList().add(new Account(ID,name,balance,password));
+	}
+	
+
+}

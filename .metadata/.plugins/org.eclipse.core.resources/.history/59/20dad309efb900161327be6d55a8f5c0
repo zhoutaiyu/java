@@ -1,0 +1,8 @@
+package castle;
+
+public class HandlerBye {
+	public boolean isbye(){
+		return true;
+	}
+
+}

@@ -1,0 +1,58 @@
+package guessS;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input =new Scanner(System.in);
+		Map<Integer,String> gift = new HashMap<Integer,String>();
+		gift.put(1,"毛绒玩具");
+		gift.put(2,"拼图");
+		gift.put(3,"玩具车");
+		gift.put(4,"玩具手枪");
+		gift.put(5,"无");
+		gift.put(6,"书包");
+		gift.put(7,"铅笔");
+		gift.put(8,"耳机");
+		gift.put(9,"手套");
+		gift.put(10,"无");
+		gift.put(11,"无");
+		
+		
+		int a;
+		int count=0;
+		int number;
+		int num;
+		//[0,1)
+		while(true){
+			//Clear.clear();
+		System.out.println("欢迎来到大禹的猜字游戏场，五次以内猜对可以获得丰厚奖励哦");
+		System.out.println("请输入你以为这次的随机数，1到101");
+		number=(int)(Math.random()*100+1);
+		do{
+			a=input.nextInt();
+			count=count+1;
+			if(number<a)
+				System.out.println("偏大");
+			if(number>a)
+				System.out.println("偏小");
+			if(number==a)
+				System.out.println("恭喜你答对了，一共答题"+count+"次");
+		}while(a!=number);
+		if(count>5)
+			System.out.println("再接再厉");
+		else
+		{
+			num=(int)Math.random()*10+1;
+		System.out.println("恭喜你获得了"+gift.get(num));
+		System.out.println("游戏结束");
+		}
+		count=0;
+			
+	}
+	}
+}

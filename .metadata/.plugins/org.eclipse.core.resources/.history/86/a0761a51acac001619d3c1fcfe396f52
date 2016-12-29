@@ -1,0 +1,30 @@
+package readWord;
+
+import java.io.*;
+
+public class Test {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		FileInputStream s;
+		FileOutputStream t;
+		s=new FileInputStream("1.txt");
+		t=new FileOutputStream("2.txt");
+		byte buffer[]= new byte[10];
+		int j=0;
+		while((j=s.read(buffer))!=-1)
+		{
+			
+			t.write(buffer,0,j);
+			System.out.println("****");
+		}
+		for(int i=0;i<buffer.length;i++)
+		{
+			System.out.println((char)buffer[i]);
+		}
+		s.close();
+		t.close();
+		
+	}
+
+}

@@ -1,0 +1,14 @@
+package excption;
+
+public class TestFinally {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+	public int static test(){
+		int i=10/0;
+		return 0;
+	}
+
+}

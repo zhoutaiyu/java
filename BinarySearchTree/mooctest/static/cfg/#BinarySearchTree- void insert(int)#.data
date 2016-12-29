@@ -1,0 +1,194 @@
+[
+  {
+    "codes": "\t\t\tsuccesssor.right = deleleNode.right; ",
+    "blocks": []
+  },
+  {
+    "codes": "\t\t} ",
+    "blocks": []
+  },
+  {
+    "codes": "\t\treturn successsor; ",
+    "blocks": []
+  },
+  {
+    "codes": "\t} ",
+    "blocks": []
+  },
+  {
+    "codes": "\tpublic void insert(int id){ ",
+    "blocks": []
+  },
+  {
+    "codes": "\t\tNode newNode = new Node(id); ",
+    "blocks": [0]
+  },
+  {
+    "codes": "\t\tif(root==null){ ",
+    "blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "codes": "\t\t\troot = newNode; ",
+    "blocks": [2]
+  },
+  {
+    "codes": "\t\t\treturn; ",
+    "blocks": [2]
+  },
+  {
+    "codes": "\t\t} ",
+    "blocks": []
+  },
+  {
+    "codes": "\t\tNode current = root; ",
+    "blocks": [3]
+  },
+  {
+    "codes": "\t\tNode parent = null; ",
+    "blocks": []
+  },
+  {
+    "codes": "\t\twhile(true){ ",
+    "blocks": [
+      4,
+      14
+    ]
+  },
+  {
+    "codes": "\t\t\tparent = current; ",
+    "blocks": [
+      5,
+      14
+    ]
+  },
+  {
+    "codes": "\t\t\tif(id<current.data){\t\t\t\t ",
+    "blocks": [
+      5,
+      6,
+      10,
+      14
+    ]
+  },
+  {
+    "codes": "\t\t\t\tcurrent = current.left; ",
+    "blocks": [
+      7,
+      10,
+      14
+    ]
+  },
+  {
+    "codes": "\t\t\t\tif(current==null){ ",
+    "blocks": [
+      7,
+      8,
+      10,
+      14
+    ]
+  },
+  {
+    "codes": "\t\t\t\t\tparent.left = newNode; ",
+    "blocks": [
+      9,
+      10,
+      14
+    ]
+  },
+  {
+    "codes": "\t\t\t\t\treturn; ",
+    "blocks": [
+      9,
+      10,
+      14
+    ]
+  },
+  {
+    "codes": "\t\t\t\t} ",
+    "blocks": [
+      10,
+      14
+    ]
+  },
+  {
+    "codes": "\t\t\t}else{ ",
+    "blocks": [
+      10,
+      14
+    ]
+  },
+  {
+    "codes": "\t\t\t\tcurrent = current.right; ",
+    "blocks": [
+      10,
+      11,
+      14
+    ]
+  },
+  {
+    "codes": "\t\t\t\tif(current==null){ ",
+    "blocks": [
+      10,
+      11,
+      12,
+      14
+    ]
+  },
+  {
+    "codes": "\t\t\t\t\tparent.right = newNode; ",
+    "blocks": [
+      10,
+      13,
+      14
+    ]
+  },
+  {
+    "codes": "\t\t\t\t\treturn; ",
+    "blocks": [
+      10,
+      13,
+      14
+    ]
+  },
+  {
+    "codes": "\t\t\t\t} ",
+    "blocks": [
+      10,
+      14
+    ]
+  },
+  {
+    "codes": "\t\t\t} ",
+    "blocks": [
+      10,
+      14
+    ]
+  },
+  {
+    "codes": "\t\t} ",
+    "blocks": [14]
+  },
+  {
+    "codes": "\t} ",
+    "blocks": []
+  },
+  {
+    "codes": "\t ",
+    "blocks": []
+  },
+  {
+    "codes": "\tpublic void display(Node root, StringBuilder sb){ ",
+    "blocks": []
+  },
+  {
+    "codes": "\t\tif(root!=null){ ",
+    "blocks": []
+  },
+  {
+    "codes": "\t\t\tdisplay(root.left, sb); ",
+    "blocks": []
+  }
+]

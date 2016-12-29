@@ -1,0 +1,11 @@
+
+public class Business {
+	Business(){
+	}
+	
+	Business(Account account){
+	}
+	
+	public void withDraw(){}
+
+}

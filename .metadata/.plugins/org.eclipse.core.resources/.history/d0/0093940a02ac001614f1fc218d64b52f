@@ -1,0 +1,33 @@
+package sorce;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+
+public class Test {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		FileInputStream s;
+		byte[] a=new byte[100];
+		int t;
+		String str=null;
+		s= new FileInputStream("³É¼¨¡£txt");
+		t=s.read(a,0,a.length);
+		for(int i=0;i<a.length;i++)
+		{
+			if(i==1)
+				str=(char)a[i];
+			else
+		        str=str.concat(a[i]);
+		}
+		
+		
+			 /*try {
+				boolean c1=s.read()!=-1;
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}*/
+		}
+
+}

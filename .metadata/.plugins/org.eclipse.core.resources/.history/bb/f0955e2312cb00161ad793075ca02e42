@@ -1,0 +1,24 @@
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class Copy {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		//创建输入流对象
+		FileInputStream in = new FileInputStream("数据结构主观题.doc");
+		//创建输出流对象
+		FileOutputStream out = new FileOutputStream("1.doc");
+		//读写操作
+		int len=0;
+		byte [] buffer =new byte[1024*10];
+		while((len=in.read(buffer))!=-1){
+			out.write(buffer, 0, len);
+		}
+		//关闭流资源
+		in.close();
+		out.close();
+	}
+
+}

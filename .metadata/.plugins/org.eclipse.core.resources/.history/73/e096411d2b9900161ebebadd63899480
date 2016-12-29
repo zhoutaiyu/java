@@ -1,0 +1,13 @@
+
+public class SpaceShuttle extends Aircraft {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Aircraft s = new SpaceShuttle();
+		s.start();
+		s.run();
+		s.stop();
+
+	}
+
+}

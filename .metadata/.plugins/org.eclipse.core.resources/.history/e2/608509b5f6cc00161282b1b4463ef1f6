@@ -1,0 +1,20 @@
+package excption;
+
+public class TestFinally {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int j=test();
+		System.out.println(j);
+	}
+	public static int test(){
+		try {
+			int i=10/0;
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.getMessage();
+		}
+		return 0;
+	}
+
+}

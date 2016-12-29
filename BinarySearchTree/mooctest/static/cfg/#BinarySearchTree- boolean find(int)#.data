@@ -1,0 +1,115 @@
+[
+  {
+    "codes": "\tpublic BinarySearchTree(){ ",
+    "blocks": []
+  },
+  {
+    "codes": "\t\tthis.root = null; ",
+    "blocks": []
+  },
+  {
+    "codes": "\t} ",
+    "blocks": []
+  },
+  {
+    "codes": "\t ",
+    "blocks": []
+  },
+  {
+    "codes": "\tpublic boolean find(int id){ ",
+    "blocks": []
+  },
+  {
+    "codes": "\t\tNode current = root; ",
+    "blocks": [0]
+  },
+  {
+    "codes": "\t\twhile(current!=null){ ",
+    "blocks": [
+      1,
+      2,
+      10
+    ]
+  },
+  {
+    "codes": "\t\t\tif(current.data==id){ ",
+    "blocks": [
+      3,
+      4,
+      10
+    ]
+  },
+  {
+    "codes": "\t\t\t\treturn true; ",
+    "blocks": [
+      5,
+      10
+    ]
+  },
+  {
+    "codes": "\t\t\t}else if(current.data>id){ ",
+    "blocks": [
+      6,
+      7,
+      8,
+      10
+    ]
+  },
+  {
+    "codes": "\t\t\t\tcurrent = current.left; ",
+    "blocks": [
+      8,
+      10
+    ]
+  },
+  {
+    "codes": "\t\t\t}else{ ",
+    "blocks": [
+      8,
+      10
+    ]
+  },
+  {
+    "codes": "\t\t\t\tcurrent = current.right; ",
+    "blocks": [
+      8,
+      9,
+      10
+    ]
+  },
+  {
+    "codes": "\t\t\t} ",
+    "blocks": [
+      8,
+      10
+    ]
+  },
+  {
+    "codes": "\t\t} ",
+    "blocks": [10]
+  },
+  {
+    "codes": "\t\treturn false; ",
+    "blocks": [11]
+  },
+  {
+    "codes": "\t} ",
+    "blocks": []
+  },
+  {
+    "codes": "\tpublic boolean delete(int id){ ",
+    "blocks": []
+  },
+  {
+    "codes": "\t\tif(root == null) ",
+    "blocks": []
+  },
+  {
+    "codes": "\t\t\treturn false; ",
+    "blocks": []
+  },
+  {
+    "codes": "\t\telse{ ",
+    "blocks": []
+  }
+]

@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class WithDraw extends Business {
+	private Account currentAccount;
+
+	WithDraw(Account account) {
+		//at java.util.Scanner.throwFor(Unknown Source)
+		//this.currentAccount=account;
+		super(account);
+	}
+
+	public void withDraw() {
+		Scanner input = new Scanner(System.in);
+		double amount = 0;
+		System.out.println("请输入你想取出的金额");
+		amount = input.nextDouble();
+		if (this.currentAccount.getBalance() > amount) {
+			this.currentAccount.setBalance(this.currentAccount.getBalance() - amount);
+			System.out.println("请取走你的钱");
+		} else
+			System.out.println("sorry,you can't afford it!!!");
+		input.close();
+	}
+}

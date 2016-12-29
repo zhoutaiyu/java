@@ -1,0 +1,9 @@
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+//ctrl+shift+o Ìí¼ÓÀà
+public class FirstDay extends JFrame {
+	private JButtom buttom1=new JButton("Ì«Ñô");
+	private JButtom buttom1=new JButton("ÔÂÁÁ");
+	
+}

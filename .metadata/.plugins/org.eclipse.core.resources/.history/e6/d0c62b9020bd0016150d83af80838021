@@ -1,0 +1,17 @@
+import java.util.ArrayList;
+
+public class AtoB extends Business {
+	
+	AtoB(Account account) {
+		super(account);
+	}
+	
+	public void aTOb{
+		
+		
+		
+		
+		
+	}
+	
+}

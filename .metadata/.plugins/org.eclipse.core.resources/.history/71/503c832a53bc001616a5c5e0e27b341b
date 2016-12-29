@@ -1,0 +1,12 @@
+
+public class WithDraw extends business{
+	private Account currentAccount;
+	
+	WithDraw(Account account){
+		super();
+	}
+	
+	public void withDraw(double amount){
+		this.currentAccount.setBalance(this.currentAccount.getBalance()-amount);
+	}
+}

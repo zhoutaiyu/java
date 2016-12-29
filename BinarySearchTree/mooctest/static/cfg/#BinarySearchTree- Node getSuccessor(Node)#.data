@@ -1,0 +1,113 @@
+[
+  {
+    "codes": "\t\t\t}\t\t ",
+    "blocks": []
+  },
+  {
+    "codes": "\t\t\treturn true;\t\t ",
+    "blocks": []
+  },
+  {
+    "codes": "\t\t} ",
+    "blocks": []
+  },
+  {
+    "codes": "\t} ",
+    "blocks": []
+  },
+  {
+    "codes": "\tpublic Node getSuccessor(Node deleleNode){ ",
+    "blocks": []
+  },
+  {
+    "codes": "\t\tNode successsor =null; ",
+    "blocks": [0]
+  },
+  {
+    "codes": "\t\tNode successsorParent =null; ",
+    "blocks": [0]
+  },
+  {
+    "codes": "\t\tNode current = deleleNode.right; ",
+    "blocks": [0]
+  },
+  {
+    "codes": "\t\twhile(current!=null){ ",
+    "blocks": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "codes": "\t\t\tsuccesssorParent = successsor; ",
+    "blocks": [3]
+  },
+  {
+    "codes": "\t\t\tsuccesssor = current; ",
+    "blocks": [3]
+  },
+  {
+    "codes": "\t\t\tcurrent = current.left; ",
+    "blocks": [3]
+  },
+  {
+    "codes": "\t\t} ",
+    "blocks": [3]
+  },
+  {
+    "codes": "\t\t                                                                             ",
+    "blocks": []
+  },
+  {
+    "codes": "\t\t                                                                           ",
+    "blocks": []
+  },
+  {
+    "codes": "                     ",
+    "blocks": []
+  },
+  {
+    "codes": "\t\tif(successsor!=deleleNode.right){ ",
+    "blocks": [
+      4,
+      5
+    ]
+  },
+  {
+    "codes": "\t\t\tsuccesssorParent.left = successsor.right; ",
+    "blocks": [6]
+  },
+  {
+    "codes": "\t\t\tsuccesssor.right = deleleNode.right; ",
+    "blocks": [6]
+  },
+  {
+    "codes": "\t\t} ",
+    "blocks": []
+  },
+  {
+    "codes": "\t\treturn successsor; ",
+    "blocks": [7]
+  },
+  {
+    "codes": "\t} ",
+    "blocks": []
+  },
+  {
+    "codes": "\tpublic void insert(int id){ ",
+    "blocks": []
+  },
+  {
+    "codes": "\t\tNode newNode = new Node(id); ",
+    "blocks": []
+  },
+  {
+    "codes": "\t\tif(root==null){ ",
+    "blocks": []
+  },
+  {
+    "codes": "\t\t\troot = newNode; ",
+    "blocks": []
+  }
+]

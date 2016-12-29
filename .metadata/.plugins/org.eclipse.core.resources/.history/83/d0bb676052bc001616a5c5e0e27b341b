@@ -1,0 +1,7 @@
+
+public class WithDraw extends business{
+	private Account currentAccount;
+	withDraw(String ){
+		super();
+	}
+}

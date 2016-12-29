@@ -1,0 +1,64 @@
+[
+  {
+    "codes": "\t\t\t} ",
+    "blocks": []
+  },
+  {
+    "codes": "\t\t} ",
+    "blocks": []
+  },
+  {
+    "codes": "\t} ",
+    "blocks": []
+  },
+  {
+    "codes": "\t ",
+    "blocks": []
+  },
+  {
+    "codes": "\tpublic void display(Node root, StringBuilder sb){ ",
+    "blocks": []
+  },
+  {
+    "codes": "\t\tif(root!=null){ ",
+    "blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "codes": "\t\t\tdisplay(root.left, sb); ",
+    "blocks": [2]
+  },
+  {
+    "codes": "\t\t\tsb.append(\" \" + root.data); ",
+    "blocks": [2]
+  },
+  {
+    "codes": "\t\t\tdisplay(root.right, sb); ",
+    "blocks": [
+      2,
+      3
+    ]
+  },
+  {
+    "codes": "\t\t} ",
+    "blocks": []
+  },
+  {
+    "codes": "\t} ",
+    "blocks": []
+  },
+  {
+    "codes": "\t ",
+    "blocks": []
+  },
+  {
+    "codes": "\tpublic String inorderTraverse(Node root){ ",
+    "blocks": []
+  },
+  {
+    "codes": "\t\tStringBuilder sb = new StringBuilder();  ",
+    "blocks": []
+  }
+]

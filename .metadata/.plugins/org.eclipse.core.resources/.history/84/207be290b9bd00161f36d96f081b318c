@@ -1,0 +1,8 @@
+
+public class ManualServer extends Server{
+	
+	ManualServer(){
+		super();
+	}
+
+}

@@ -1,0 +1,23 @@
+package edu.cn;
+
+public class Date {
+	private int year;
+	private int month;
+	private int day;
+	
+	Date(int year,int month,int day){
+		this.year=year;
+		this.month=month;
+		this.day=day;
+	}
+	
+	public void runnian(){
+		if((year%4==0&&year%100!=0)||(year%400==0)){
+			System.out.println(year+"年是闰年");
+		}
+		else
+			System.out.println(year+"年不是闰年");
+	}
+	
+	public void 
+}

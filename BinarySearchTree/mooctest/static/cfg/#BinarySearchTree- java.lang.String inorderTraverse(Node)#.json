@@ -1,0 +1,42 @@
+{"0": {
+  "instructions": [
+    {"temp$0 = new java.lang.StringBuilder": {
+      "eline": 139,
+      "epos": 41,
+      "spos": 3,
+      "sline": 139
+    }},
+    {"specialinvoke temp$0.<java.lang.StringBuilder: void <init>()>()": {
+      "eline": 139,
+      "epos": 40,
+      "spos": 22,
+      "sline": 139
+    }},
+    {"sb = temp$0": {
+      "eline": 139,
+      "epos": 40,
+      "spos": 22,
+      "sline": 139
+    }},
+    {"virtualinvoke this.<BinarySearchTree: void display(Node,java.lang.StringBuilder)>(root, sb)": {
+      "eline": 140,
+      "epos": 6,
+      "spos": 3,
+      "sline": 140
+    }},
+    {"temp$1 = virtualinvoke sb.<java.lang.StringBuilder: java.lang.String toString()>()": {
+      "eline": 140,
+      "epos": 6,
+      "spos": 3,
+      "sline": 140
+    }},
+    {"return temp$1": {
+      "eline": 141,
+      "epos": 23,
+      "spos": 3,
+      "sline": 141
+    }}
+  ],
+  "preds": [],
+  "succs": []
+}}

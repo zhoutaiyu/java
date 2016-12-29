@@ -1,0 +1,59 @@
+package castle;
+
+public class Room {
+    private String description;
+    private Room northExit;
+    private Room southExit;
+    private Room eastExit;
+    private Room westExit;
+
+    public Room(String description) 
+    {
+        this.description = description;
+    }
+
+    public void setExits(Room north, Room east, Room south, Room west) 
+    {
+        if(north != null)
+            northExit = north;
+        if(east != null)
+            eastExit = east;
+        if(south != null)
+            southExit = south;
+        if(west != null)
+            westExit = west;
+    }
+
+    @Override
+    public String toString()
+    {
+        return description;
+    }
+    
+    public Room getExit(String direction){
+    	 Room ret =null;
+    	 if(direction.equals("west"))
+    		 ret=this.westExit;
+    	 if(direction.equals("east"))
+    		 ret=this.eastExit;
+    	 if(direction.equals("north"))
+    		 ret=this.northExit;
+    	 if(direction.equals("south"))
+    		 ret=this.southExit;
+    	 return ret;
+         }
+    }
+    
+    public String getExitDes(){
+    	StringBuffer s=new StringBuffer();
+    	if(eastExit!=null)
+    		s=s.append(eastExit);
+    	if(westExit!=null)
+    		s=s.append(westExit);
+    	if(northExit!=null)
+    		s=s.append(northExit);
+    	if(southExit!=null)
+    		s=s.append(southExit);
+    	return s.toString();
+    }
+}

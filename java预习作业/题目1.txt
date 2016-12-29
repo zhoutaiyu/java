@@ -1,0 +1,60 @@
+1.编译Java源程序文件将产生相应的字节码文件，这些字节码文件的扩展名为
+A. .js    B.    .class  C. .docx   D. .doc
+2.有以下方法的定义，请选择该方法的返回类型ReturnType应该被替换为:
+ReturnType  method(byte x, double y)  { 
+    return  (short)x/y*2; 
+}
+A. float  B.   double   C.byte  D.char
+
+
+3. 有以下程序片段，下列哪个选项不能插入到第1行。（ ） 
+//    第1行
+public  class  Interesting{ 
+      //do sth
+在PUBLIC类中找程序的入口   main函数  你想想如果很多PUBLIC   类，那程序从何运行呢？
+}
+A. import java.awt.*;
+B.package mypackage;
+C.class OtherClass{ }
+D.public class MyClass{ }//
+
+4.以下哪种运算能从变量x中取得它的个位数
+A. x[10] B. x^10 C. x/10 D.// x%10
+
+5. 以下代码片段的输出是：
+int j=4;
+for ( int i=j; i<=2*j; i++ ) {
+   switch ( i/j ) {
+   case 0:
+   case 1: System.out.print(“#”); break;
+   case 2: System.out.print(“*”);
+   }
+}####*
+
+6.下列可用于Java语言程序标识符的一组是
+A. go-to, sunshine, a          B. goto, aa, bb 
+C.void, aa, bb                      D._if, _123, file//
+
+7.下列程序段输出结果为：
+int x=1, y=12;
+System.out.printf(“%d”,y*x++);//12
+
+8. for(表达式1;;表达式3)
+可理解为
+A. for(表达式1; true;表达式3)//
+B. for(表达式1;表达式3;)
+C. for(表达式1;表达式3)
+D. for(表达式1;1;表达式3)
+
+9.以下哪个不是Java语言的关键字
+ A. goto//保留字 B.switch C.main D.class
+
+10.对于函数中的以下代码：
+int i,j=6;
+j +=i;以下哪句话是对的
+A.i被初始为0，而j是6，j最后是6
+B.i没有被初始化，j最后的值是不确定的
+C.不能通过编译//
+D.i和j的初始值都是6，j最后是12
+
+11.判断题：while循环的条件满足的时候循环继续对，而do-错while的条件满足的时候循环就结束了

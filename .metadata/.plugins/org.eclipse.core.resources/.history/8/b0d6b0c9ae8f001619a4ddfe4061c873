@@ -1,0 +1,29 @@
+package time;
+
+import java.util.Scanner;
+
+public  class Time{
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+	    int a,b;
+	    int i;
+	    int sum=0;
+	    a=input.nextInt();
+	    b=input.nextInt();
+	    for(i=a;i<=b;i++)
+	    {
+	    	for(int j=2;j<i;j++)
+	    	{
+	    		if(i%j==0)
+	    		{
+	    			sum=sum+i;
+	    			break;
+	    		}
+	    	}
+	    }
+	    System.out.println(sum);
+	    
+	}
+
+}

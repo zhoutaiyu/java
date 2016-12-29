@@ -1,0 +1,17 @@
+
+public class Account {
+	//成员变量
+		private String ID;//账户号
+		private String name;//用户名
+		private double balance;//余额
+		private String password;//密码
+		
+		//定义构造函数
+		Account (String ID,String name,double balance,String password){
+			this.ID=ID;
+			this.name=name;
+			this.balance=balance;
+			this.password=password;
+		}
+
+}

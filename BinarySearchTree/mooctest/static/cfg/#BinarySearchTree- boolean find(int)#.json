@@ -1,0 +1,196 @@
+{
+  "3": {
+    "instructions": [
+      {"temp$0 = current.<Node: int data>": {
+        "eline": 10,
+        "epos": 22,
+        "spos": 7,
+        "sline": 10
+      }},
+      {"if temp$0 == id goto block_5 #1": {
+        "eline": 10,
+        "epos": 22,
+        "ifpos": "(9, 3)-(9, 22)",
+        "spos": 7,
+        "sline": 10
+      }}
+    ],
+    "preds": [1],
+    "succs": [
+      4,
+      5
+    ]
+  },
+  "2": {
+    "instructions": [{"goto block_11": {
+      "eline": 9,
+      "epos": 21,
+      "spos": 9,
+      "sline": 9
+    }}],
+    "preds": [1],
+    "succs": [11]
+  },
+  "10": {
+    "instructions": [{"goto block_1": {
+      "eline": 17,
+      "epos": 3,
+      "spos": 3,
+      "sline": 9
+    }}],
+    "preds": [
+      8,
+      9
+    ],
+    "succs": [1]
+  },
+  "1": {
+    "instructions": [{"if current != null goto block_3 #0": {
+      "eline": 9,
+      "epos": 21,
+      "ifpos": "(8, 2)-(8, 21)",
+      "spos": 9,
+      "sline": 9
+    }}],
+    "preds": [
+      0,
+      10
+    ],
+    "succs": [
+      2,
+      3
+    ]
+  },
+  "0": {
+    "instructions": [{"current = <BinarySearchTree: Node root>": {
+      "eline": 8,
+      "epos": 22,
+      "spos": 3,
+      "sline": 8
+    }}],
+    "preds": [],
+    "succs": [1]
+  },
+  "7": {
+    "instructions": [{"goto block_9": {
+      "eline": 12,
+      "epos": 27,
+      "spos": 13,
+      "sline": 12
+    }}],
+    "preds": [6],
+    "succs": [9]
+  },
+  "6": {
+    "instructions": [
+      {"temp$2 = current.<Node: int data>": {
+        "eline": 12,
+        "epos": 27,
+        "spos": 13,
+        "sline": 12
+      }},
+      {"if temp$2 > id goto block_8 #2": {
+        "eline": 12,
+        "epos": 27,
+        "ifpos": "(11, 9)-(11, 27)",
+        "spos": 13,
+        "sline": 12
+      }}
+    ],
+    "preds": [4],
+    "succs": [
+      7,
+      8
+    ]
+  },
+  "5": {
+    "instructions": [
+      {"temp$1 = 1": {
+        "reliable": false,
+        "eline": 10,
+        "epos": 22,
+        "spos": 7,
+        "sline": 10
+      }},
+      {"return temp$1": {
+        "eline": 11,
+        "epos": 16,
+        "spos": 5,
+        "sline": 11
+      }}
+    ],
+    "preds": [3],
+    "succs": []
+  },
+  "4": {
+    "instructions": [{"goto block_6": {
+      "eline": 10,
+      "epos": 22,
+      "spos": 7,
+      "sline": 10
+    }}],
+    "preds": [3],
+    "succs": [6]
+  },
+  "9": {
+    "instructions": [
+      {"temp$4 = current.<Node: Node right>": {
+        "eline": 15,
+        "epos": 28,
+        "spos": 5,
+        "sline": 15
+      }},
+      {"current = temp$4": {
+        "eline": 15,
+        "epos": 11,
+        "spos": 5,
+        "sline": 15
+      }}
+    ],
+    "preds": [7],
+    "succs": [10]
+  },
+  "8": {
+    "instructions": [
+      {"temp$3 = current.<Node: Node left>": {
+        "eline": 13,
+        "epos": 27,
+        "spos": 5,
+        "sline": 13
+      }},
+      {"current = temp$3": {
+        "eline": 13,
+        "epos": 11,
+        "spos": 5,
+        "sline": 13
+      }},
+      {"goto block_10": {
+        "eline": 16,
+        "epos": 4,
+        "spos": 10,
+        "sline": 12
+      }}
+    ],
+    "preds": [6],
+    "succs": [10]
+  },
+  "11": {
+    "instructions": [
+      {"temp$5 = 0": {
+        "reliable": false,
+        "eline": 17,
+        "epos": 3,
+        "spos": 3,
+        "sline": 9
+      }},
+      {"return temp$5": {
+        "eline": 18,
+        "epos": 15,
+        "spos": 3,
+        "sline": 18
+      }}
+    ],
+    "preds": [2],
+    "succs": []
+  }
+}

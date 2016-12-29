@@ -1,0 +1,26 @@
+{"0": {
+  "instructions": [
+    {"specialinvoke this.<java.lang.Object: void <init>()>()": {}},
+    {"temp$1 = null": {
+      "reliable": false,
+      "eline": 4,
+      "epos": 11,
+      "spos": 8,
+      "sline": 4
+    }},
+    {"<BinarySearchTree: Node root> = temp$1": {
+      "eline": 4,
+      "epos": 11,
+      "spos": 8,
+      "sline": 4
+    }},
+    {"return": {
+      "eline": 4,
+      "epos": 11,
+      "spos": 8,
+      "sline": 4
+    }}
+  ],
+  "preds": [],
+  "succs": []
+}}

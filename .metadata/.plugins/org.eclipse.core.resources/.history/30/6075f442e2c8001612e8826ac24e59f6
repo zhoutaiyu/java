@@ -1,0 +1,43 @@
+import java.io.File;
+
+public class FileOperate {
+
+	public FileOperate(){}
+	
+	public static void  delFile(String FilePathAndName){
+		String filePath=FilePathAndName;
+		filePath=filePath.toString();
+		File myDelFile=new File(filePath);
+		myDelFile.delete();
+	}
+	
+	public void delFolder(String folderPath){
+		try{
+			delAllFile(folderPath);
+			File myFilePath=new File(folderPath);
+			myFilePath.delete();
+		}catch(Exception e){
+			System.out.println("删除文件时出错");
+			e.printStackTrace();
+		}
+	}
+	
+	public delAllFile(String path){
+		File file = new File(path);
+		if(!file.exists()){
+			return;
+		}
+		if(!file.isDirectory()){
+			return;
+		}
+		String []tempList = file.list();
+		for(int i=0;i<tempList.length;i++){
+			
+		}
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//delFile("dir/1.txt");
+	}
+
+}

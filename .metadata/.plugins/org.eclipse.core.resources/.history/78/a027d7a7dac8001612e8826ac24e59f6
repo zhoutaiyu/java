@@ -1,0 +1,13 @@
+import java.io.File;
+
+public class TestMkdirs {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		File dir=new File("dir");
+		dir.mkdir();
+		//ir.mkdirs();
+
+	}
+
+}

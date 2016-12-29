@@ -1,0 +1,34 @@
+import static org.junit.Assert.*;
+
+import java.lang.reflect.InvocationTargetException;
+
+public class Test {
+
+	@org.junit.Test
+	public void test() {
+		String t = null;
+		ParameterConsumption p1=new ParameterConsumption(null);
+		ParameterConsumption p2=new ParameterConsumption(null, false);
+		//ParameterConsumption p4=new ParameterConsumption
+		ParameterConsumption p3=new ParameterConsumption(null, t);
+		
+		/*OptionSpecification s=new OptionSpecification(t, null, null, p1, false, null);
+		try {
+			s.activateAndConsumeParameters(null);
+		} catch (InvocationTargetException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (InstantiationException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		s.getOptionId();
+		s.getSwitch();
+		s.isLooseParametersSpecification();
+		s.validate();*/
+	}
+
+}

@@ -1,0 +1,18 @@
+import java.io.File;
+
+public class FileOperate {
+
+	public FileOperate(){}
+	
+	public void static delFile(String FilePathAndName){
+		String filePath=FilePathAndName;
+		filePath=filePath.toString();
+		File myDelFile=new File(filePath);
+		myDelFile.delete();
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

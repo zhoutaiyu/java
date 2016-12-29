@@ -1,0 +1,15 @@
+
+public class FileOperate {
+
+	public FileOperate(){}
+	
+	public void delFile(String FilePathAndName){
+		String filePath=filePathAndName;
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

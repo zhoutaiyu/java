@@ -1,0 +1,27 @@
+package excption;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class User {
+
+	private static List a=new ArrayList<String>();
+	User(){
+		a.add("aa");
+		a.add("bb");
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		login("cc");
+	}
+	
+	public static String login(String s){
+		if(a.contains(s)){
+			return s;
+		}
+		else
+			new UserNotExitException("用户名不存在");
+		return null;
+	}
+
+}

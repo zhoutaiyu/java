@@ -1,0 +1,22 @@
+package sorce;
+
+import java.util.Scanner;
+
+public class SpaceTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		String s;
+		String str[]=new String[10];
+		s=input.nextLine();
+		str=s.split("\\s+");
+		for(String str1:str)
+		{
+			System.out.println(str1);
+		}
+		
+		
+	}
+
+}

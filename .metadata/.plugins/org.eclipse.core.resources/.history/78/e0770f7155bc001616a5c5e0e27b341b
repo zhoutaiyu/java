@@ -1,0 +1,12 @@
+
+public class Business {
+	private Account currentAccount;
+	
+	Business(){
+	}
+	
+	Business(Account account){
+		this.currentAccount=account;
+	}
+
+}

@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class WithDraw extends Business {
+	private Account currentAccount;
+
+	WithDraw(Account account) {
+		//at java.util.Scanner.throwFor(Unknown Source)
+		//this.currentAccount=account;
+		//Exception in thread "main" java.lang.NullPointerException
+		super(account);
+	}
+
+	public void withDraw(double amount) {
+		//Scanner input = new Scanner(System.in);
+		//double amount = 0;
+		System.out.println(currentAccount);
+		//amount = input.nextDouble();
+		if (this.currentAccount.getBalance() > amount) {
+			this.currentAccount.setBalance(this.currentAccount.getBalance() - amount);
+			System.out.println("ÇëÈ¡×ßÄãµÄÇ®");
+		} else
+			System.out.println("sorry,you can't afford it!!!");
+		//input.close();
+	}
+}

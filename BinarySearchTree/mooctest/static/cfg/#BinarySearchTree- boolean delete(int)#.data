@@ -1,0 +1,539 @@
+[
+  {
+    "codes": "\t\t\t} ",
+    "blocks": []
+  },
+  {
+    "codes": "\t\t} ",
+    "blocks": []
+  },
+  {
+    "codes": "\t\treturn false; ",
+    "blocks": []
+  },
+  {
+    "codes": "\t} ",
+    "blocks": []
+  },
+  {
+    "codes": "\tpublic boolean delete(int id){ ",
+    "blocks": []
+  },
+  {
+    "codes": "\t\tif(root == null) ",
+    "blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "codes": "\t\t\treturn false; ",
+    "blocks": [2]
+  },
+  {
+    "codes": "\t\telse{ ",
+    "blocks": []
+  },
+  {
+    "codes": "\t\t\tNode parent = root; ",
+    "blocks": [3]
+  },
+  {
+    "codes": "\t\t\tNode current = root; ",
+    "blocks": [3]
+  },
+  {
+    "codes": "\t\t\tboolean isLeftChild = false; ",
+    "blocks": [3]
+  },
+  {
+    "codes": "\t\t\twhile(current.data!=id){ ",
+    "blocks": [
+      4,
+      5,
+      13
+    ]
+  },
+  {
+    "codes": "\t\t\t\tparent = current; ",
+    "blocks": [
+      6,
+      13
+    ]
+  },
+  {
+    "codes": "\t\t\t\tif(current.data>id){ ",
+    "blocks": [
+      6,
+      7,
+      8,
+      13
+    ]
+  },
+  {
+    "codes": "\t\t\t\t\tisLeftChild = true; ",
+    "blocks": [
+      8,
+      13
+    ]
+  },
+  {
+    "codes": "\t\t\t\t\tcurrent = current.left; ",
+    "blocks": [
+      8,
+      13
+    ]
+  },
+  {
+    "codes": "\t\t\t\t}else{ ",
+    "blocks": [
+      8,
+      13
+    ]
+  },
+  {
+    "codes": "\t\t\t\t\tisLeftChild = false; ",
+    "blocks": [
+      8,
+      9,
+      13
+    ]
+  },
+  {
+    "codes": "\t\t\t\t\tcurrent = current.right; ",
+    "blocks": [
+      8,
+      9,
+      13
+    ]
+  },
+  {
+    "codes": "\t\t\t\t} ",
+    "blocks": [
+      8,
+      13
+    ]
+  },
+  {
+    "codes": "\t\t\t\tif(current ==null){ ",
+    "blocks": [
+      10,
+      11,
+      13
+    ]
+  },
+  {
+    "codes": "\t\t\t\t\treturn false; ",
+    "blocks": [
+      12,
+      13
+    ]
+  },
+  {
+    "codes": "\t\t\t\t} ",
+    "blocks": [13]
+  },
+  {
+    "codes": "\t\t\t} ",
+    "blocks": [13]
+  },
+  {
+    "codes": "\t\t\t                                                 ",
+    "blocks": []
+  },
+  {
+    "codes": "\t\t\t                                                ",
+    "blocks": []
+  },
+  {
+    "codes": "\t\t\tif(current.left==null && current.right==null){ ",
+    "blocks": [
+      17,
+      16,
+      25,
+      14,
+      15
+    ]
+  },
+  {
+    "codes": "\t\t\t\tif(current==root){ ",
+    "blocks": [
+      19,
+      18,
+      25
+    ]
+  },
+  {
+    "codes": "\t\t\t\t\troot = null; ",
+    "blocks": [
+      20,
+      25
+    ]
+  },
+  {
+    "codes": "\t\t\t\t} ",
+    "blocks": [25]
+  },
+  {
+    "codes": "\t\t\t\tif(isLeftChild ==true){ ",
+    "blocks": [
+      21,
+      23,
+      22,
+      25
+    ]
+  },
+  {
+    "codes": "\t\t\t\t\tparent.left = null; ",
+    "blocks": [
+      23,
+      25
+    ]
+  },
+  {
+    "codes": "\t\t\t\t}else{ ",
+    "blocks": [
+      23,
+      25
+    ]
+  },
+  {
+    "codes": "\t\t\t\t\tparent.right = null; ",
+    "blocks": [
+      23,
+      25,
+      24
+    ]
+  },
+  {
+    "codes": "\t\t\t\t} ",
+    "blocks": [
+      23,
+      25
+    ]
+  },
+  {
+    "codes": "\t\t\t} ",
+    "blocks": [25]
+  },
+  {
+    "codes": "\t\t\t                                                    ",
+    "blocks": [25]
+  },
+  {
+    "codes": "\t\t\telse if(current.right==null){ ",
+    "blocks": [
+      35,
+      25,
+      27,
+      26
+    ]
+  },
+  {
+    "codes": "\t\t\t\tif(current==root){ ",
+    "blocks": [
+      35,
+      25,
+      29,
+      28,
+      30
+    ]
+  },
+  {
+    "codes": "\t\t\t\t\troot = current.left; ",
+    "blocks": [
+      35,
+      25,
+      30
+    ]
+  },
+  {
+    "codes": "\t\t\t\t}else if(isLeftChild){ ",
+    "blocks": [
+      35,
+      32,
+      33,
+      25,
+      31,
+      30
+    ]
+  },
+  {
+    "codes": "\t\t\t\t\tparent.left = current.left; ",
+    "blocks": [
+      35,
+      33,
+      25,
+      30
+    ]
+  },
+  {
+    "codes": "\t\t\t\t}else{ ",
+    "blocks": [
+      35,
+      33,
+      25,
+      30
+    ]
+  },
+  {
+    "codes": "\t\t\t\t\tparent.right = current.left; ",
+    "blocks": [
+      34,
+      35,
+      33,
+      25,
+      30
+    ]
+  },
+  {
+    "codes": "\t\t\t\t} ",
+    "blocks": [
+      35,
+      33,
+      25,
+      30
+    ]
+  },
+  {
+    "codes": "\t\t\t} ",
+    "blocks": [
+      35,
+      25
+    ]
+  },
+  {
+    "codes": "\t\t\telse if(current.left==null){ ",
+    "blocks": [
+      35,
+      36,
+      37,
+      25,
+      45
+    ]
+  },
+  {
+    "codes": "\t\t\t\tif(current==root){ ",
+    "blocks": [
+      35,
+      38,
+      39,
+      25,
+      40,
+      45
+    ]
+  },
+  {
+    "codes": "\t\t\t\t\troot = current.right; ",
+    "blocks": [
+      35,
+      25,
+      40,
+      45
+    ]
+  },
+  {
+    "codes": "\t\t\t\t}else if(isLeftChild){ ",
+    "blocks": [
+      35,
+      42,
+      25,
+      43,
+      40,
+      41,
+      45
+    ]
+  },
+  {
+    "codes": "\t\t\t\t\tparent.left = current.right; ",
+    "blocks": [
+      35,
+      25,
+      43,
+      40,
+      45
+    ]
+  },
+  {
+    "codes": "\t\t\t\t}else{ ",
+    "blocks": [
+      35,
+      25,
+      43,
+      40,
+      45
+    ]
+  },
+  {
+    "codes": "\t\t\t\t\tparent.right = current.right; ",
+    "blocks": [
+      35,
+      25,
+      43,
+      40,
+      44,
+      45
+    ]
+  },
+  {
+    "codes": "\t\t\t\t} ",
+    "blocks": [
+      35,
+      25,
+      43,
+      40,
+      45
+    ]
+  },
+  {
+    "codes": "\t\t\t}else if(current.left!=null && current.right!=null){ ",
+    "blocks": [
+      35,
+      49,
+      48,
+      25,
+      46,
+      47,
+      45
+    ]
+  },
+  {
+    "codes": "\t\t\t ",
+    "blocks": [
+      35,
+      25,
+      45
+    ]
+  },
+  {
+    "codes": "\t\t\t\t                                                              ",
+    "blocks": [
+      35,
+      25,
+      45
+    ]
+  },
+  {
+    "codes": "\t\t\t\tNode successor\t = getSuccessor(current); ",
+    "blocks": [
+      50,
+      35,
+      25,
+      45
+    ]
+  },
+  {
+    "codes": "\t\t\t\tif(current==root){ ",
+    "blocks": [
+      51,
+      50,
+      35,
+      52,
+      25,
+      45
+    ]
+  },
+  {
+    "codes": "\t\t\t\t\troot = successor; ",
+    "blocks": [
+      35,
+      52,
+      25,
+      45
+    ]
+  },
+  {
+    "codes": "\t\t\t\t}else if(isLeftChild){ ",
+    "blocks": [
+      35,
+      55,
+      54,
+      53,
+      52,
+      25,
+      45
+    ]
+  },
+  {
+    "codes": "\t\t\t\t\tparent.left = successor; ",
+    "blocks": [
+      35,
+      55,
+      52,
+      25,
+      45
+    ]
+  },
+  {
+    "codes": "\t\t\t\t}else{ ",
+    "blocks": [
+      35,
+      55,
+      52,
+      25,
+      45
+    ]
+  },
+  {
+    "codes": "\t\t\t\t\tparent.right = successor; ",
+    "blocks": [
+      35,
+      55,
+      52,
+      25,
+      56,
+      45
+    ]
+  },
+  {
+    "codes": "\t\t\t\t}\t\t\t ",
+    "blocks": [
+      35,
+      55,
+      52,
+      25,
+      45
+    ]
+  },
+  {
+    "codes": "\t\t\t\tsuccessor.left = current.left; ",
+    "blocks": [
+      35,
+      25,
+      57,
+      45
+    ]
+  },
+  {
+    "codes": "\t\t\t}\t\t ",
+    "blocks": [
+      35,
+      25,
+      45
+    ]
+  },
+  {
+    "codes": "\t\t\treturn true;\t\t ",
+    "blocks": [58]
+  },
+  {
+    "codes": "\t\t} ",
+    "blocks": []
+  },
+  {
+    "codes": "\t} ",
+    "blocks": []
+  },
+  {
+    "codes": "\tpublic Node getSuccessor(Node deleleNode){ ",
+    "blocks": []
+  },
+  {
+    "codes": "\t\tNode successsor =null; ",
+    "blocks": []
+  },
+  {
+    "codes": "\t\tNode successsorParent =null; ",
+    "blocks": []
+  }
+]

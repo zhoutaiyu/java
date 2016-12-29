@@ -1,0 +1,18 @@
+
+public class ManualServer extends Server{
+	private boolean isIce=false;;
+	
+	public boolean isIce() {
+		return isIce;
+	}
+
+	public void setIce(boolean isIce) {
+		this.isIce = isIce;
+	}
+
+	ManualServer(boolean isIce){
+		super();
+		this.isIce=isIce;
+	}
+
+}

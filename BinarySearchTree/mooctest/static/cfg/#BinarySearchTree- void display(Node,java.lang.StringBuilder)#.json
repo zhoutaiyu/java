@@ -1,0 +1,111 @@
+{
+  "3": {
+    "instructions": [{"return": {
+      "eline": 134,
+      "epos": 26,
+      "spos": 4,
+      "sline": 134
+    }}],
+    "preds": [
+      1,
+      2
+    ],
+    "succs": []
+  },
+  "2": {
+    "instructions": [
+      {"temp$0 = root.<Node: Node left>": {
+        "eline": 132,
+        "epos": 25,
+        "spos": 4,
+        "sline": 132
+      }},
+      {"virtualinvoke this.<BinarySearchTree: void display(Node,java.lang.StringBuilder)>(temp$0, sb)": {
+        "eline": 132,
+        "epos": 25,
+        "spos": 4,
+        "sline": 132
+      }},
+      {"temp$1 = new java.lang.StringBuffer": {
+        "eline": 133,
+        "epos": 30,
+        "spos": 4,
+        "sline": 133
+      }},
+      {"specialinvoke temp$1.<java.lang.StringBuffer: void <init>()>()": {
+        "eline": 133,
+        "epos": 28,
+        "spos": 14,
+        "sline": 133
+      }},
+      {"virtualinvoke temp$1.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(\" \")": {
+        "eline": 133,
+        "epos": 28,
+        "spos": 14,
+        "sline": 133
+      }},
+      {"temp$2 = root.<Node: int data>": {
+        "eline": 133,
+        "epos": 28,
+        "spos": 14,
+        "sline": 133
+      }},
+      {"virtualinvoke temp$1.<java.lang.StringBuffer: java.lang.StringBuffer append(int)>(temp$2)": {
+        "eline": 133,
+        "epos": 28,
+        "spos": 14,
+        "sline": 133
+      }},
+      {"temp$3 = virtualinvoke temp$1.<java.lang.StringBuffer: java.lang.String toString()>()": {
+        "eline": 133,
+        "epos": 28,
+        "spos": 14,
+        "sline": 133
+      }},
+      {"virtualinvoke sb.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(temp$3)": {
+        "eline": 133,
+        "epos": 28,
+        "spos": 14,
+        "sline": 133
+      }},
+      {"temp$5 = root.<Node: Node right>": {
+        "eline": 134,
+        "epos": 26,
+        "spos": 4,
+        "sline": 134
+      }},
+      {"virtualinvoke this.<BinarySearchTree: void display(Node,java.lang.StringBuilder)>(temp$5, sb)": {
+        "eline": 134,
+        "epos": 26,
+        "spos": 4,
+        "sline": 134
+      }}
+    ],
+    "preds": [0],
+    "succs": [3]
+  },
+  "1": {
+    "instructions": [{"goto block_3": {
+      "eline": 131,
+      "epos": 15,
+      "spos": 6,
+      "sline": 131
+    }}],
+    "preds": [0],
+    "succs": [3]
+  },
+  "0": {
+    "instructions": [{"if root != null goto block_2 #0": {
+      "eline": 131,
+      "epos": 15,
+      "ifpos": "(130, 2)-(130, 15)",
+      "spos": 6,
+      "sline": 131
+    }}],
+    "preds": [],
+    "succs": [
+      1,
+      2
+    ]
+  }
+}

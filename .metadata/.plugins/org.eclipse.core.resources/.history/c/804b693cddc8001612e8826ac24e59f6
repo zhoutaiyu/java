@@ -1,0 +1,27 @@
+import java.io.File;
+import java.io.IOException;
+//创建文件夹及一个txt文件
+public class TestMkdirs {
+	
+	public static boolean creatDir(){
+	File dir =new File("dir");
+	dir.mkdirs();
+	//获取目录dir对应的File对象
+	File file1=new File(dir,"1.txt");
+	try {
+		file1.createNewFile();
+		return true;
+	} catch (IOException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+		return false;
+	}
+	}
+	
+
+	public static void main(String[] args) {
+		boolean s= creatDir();
+
+	}
+
+}

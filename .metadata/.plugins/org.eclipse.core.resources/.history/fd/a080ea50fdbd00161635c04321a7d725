@@ -1,0 +1,7 @@
+
+public class SelfServer extends Server {
+	SelfServer(){
+		super();	
+		}
+
+}

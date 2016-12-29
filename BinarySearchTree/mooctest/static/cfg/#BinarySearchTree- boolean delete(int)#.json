@@ -1,0 +1,1038 @@
+{
+  "35": {
+    "instructions": [{"goto block_58": {
+      "eline": 82,
+      "epos": 4,
+      "spos": 9,
+      "sline": 53
+    }}],
+    "preds": [
+      30,
+      33,
+      34
+    ],
+    "succs": [58]
+  },
+  "36": {
+    "instructions": [
+      {"temp$20 = current.<Node: Node left>": {
+        "eline": 62,
+        "epos": 29,
+        "spos": 12,
+        "sline": 62
+      }},
+      {"if temp$20 == null goto block_38 #10": {
+        "eline": 62,
+        "epos": 29,
+        "ifpos": "(61, 8)-(61, 29)",
+        "spos": 12,
+        "sline": 62
+      }}
+    ],
+    "preds": [27],
+    "succs": [
+      37,
+      38
+    ]
+  },
+  "33": {
+    "instructions": [
+      {"temp$18 = current.<Node: Node left>": {
+        "eline": 57,
+        "epos": 32,
+        "spos": 6,
+        "sline": 57
+      }},
+      {"parent.<Node: Node left> = temp$18": {
+        "eline": 57,
+        "epos": 16,
+        "spos": 13,
+        "sline": 57
+      }},
+      {"goto block_35": {
+        "eline": 60,
+        "epos": 5,
+        "spos": 11,
+        "sline": 56
+      }}
+    ],
+    "preds": [32],
+    "succs": [35]
+  },
+  "34": {
+    "instructions": [
+      {"temp$19 = current.<Node: Node left>": {
+        "eline": 59,
+        "epos": 33,
+        "spos": 6,
+        "sline": 59
+      }},
+      {"parent.<Node: Node right> = temp$19": {
+        "eline": 59,
+        "epos": 17,
+        "spos": 13,
+        "sline": 59
+      }}
+    ],
+    "preds": [31],
+    "succs": [35]
+  },
+  "39": {
+    "instructions": [{"goto block_41": {
+      "eline": 63,
+      "epos": 20,
+      "spos": 8,
+      "sline": 63
+    }}],
+    "preds": [38],
+    "succs": [41]
+  },
+  "37": {
+    "instructions": [{"goto block_46": {
+      "eline": 62,
+      "epos": 29,
+      "spos": 12,
+      "sline": 62
+    }}],
+    "preds": [36],
+    "succs": [46]
+  },
+  "38": {
+    "instructions": [
+      {"temp$21 = <BinarySearchTree: Node root>": {
+        "eline": 63,
+        "epos": 20,
+        "spos": 8,
+        "sline": 63
+      }},
+      {"if current == temp$21 goto block_40 #11": {
+        "eline": 63,
+        "epos": 20,
+        "ifpos": "(62, 4)-(62, 20)",
+        "spos": 8,
+        "sline": 63
+      }}
+    ],
+    "preds": [36],
+    "succs": [
+      39,
+      40
+    ]
+  },
+  "43": {
+    "instructions": [
+      {"temp$23 = current.<Node: Node right>": {
+        "eline": 66,
+        "epos": 33,
+        "spos": 6,
+        "sline": 66
+      }},
+      {"parent.<Node: Node left> = temp$23": {
+        "eline": 66,
+        "epos": 16,
+        "spos": 13,
+        "sline": 66
+      }},
+      {"goto block_45": {
+        "eline": 69,
+        "epos": 5,
+        "spos": 11,
+        "sline": 65
+      }}
+    ],
+    "preds": [42],
+    "succs": [45]
+  },
+  "42": {
+    "instructions": [{"goto block_43": {
+      "eline": 65,
+      "epos": 24,
+      "spos": 14,
+      "sline": 65
+    }}],
+    "preds": [41],
+    "succs": [43]
+  },
+  "41": {
+    "instructions": [{"if isLeftChild == 0 goto block_44 #12": {
+      "eline": 65,
+      "epos": 24,
+      "ifpos": "(64, 10)-(64, 24)",
+      "spos": 14,
+      "sline": 65
+    }}],
+    "preds": [39],
+    "succs": [
+      42,
+      44
+    ]
+  },
+  "40": {
+    "instructions": [
+      {"temp$22 = current.<Node: Node right>": {
+        "eline": 64,
+        "epos": 26,
+        "spos": 6,
+        "sline": 64
+      }},
+      {"<BinarySearchTree: Node root> = temp$22": {
+        "eline": 64,
+        "epos": 9,
+        "spos": 6,
+        "sline": 64
+      }},
+      {"goto block_45": {
+        "eline": 69,
+        "epos": 5,
+        "spos": 5,
+        "sline": 63
+      }}
+    ],
+    "preds": [38],
+    "succs": [45]
+  },
+  "22": {
+    "instructions": [{"goto block_24": {
+      "eline": 46,
+      "epos": 25,
+      "spos": 8,
+      "sline": 46
+    }}],
+    "preds": [21],
+    "succs": [24]
+  },
+  "23": {
+    "instructions": [
+      {"temp$13 = null": {
+        "reliable": false,
+        "eline": 47,
+        "epos": 16,
+        "spos": 13,
+        "sline": 47
+      }},
+      {"parent.<Node: Node left> = temp$13": {
+        "eline": 47,
+        "epos": 16,
+        "spos": 13,
+        "sline": 47
+      }},
+      {"goto block_25": {
+        "eline": 50,
+        "epos": 5,
+        "spos": 5,
+        "sline": 46
+      }}
+    ],
+    "preds": [21],
+    "succs": [25]
+  },
+  "24": {
+    "instructions": [
+      {"temp$14 = null": {
+        "reliable": false,
+        "eline": 49,
+        "epos": 17,
+        "spos": 13,
+        "sline": 49
+      }},
+      {"parent.<Node: Node right> = temp$14": {
+        "eline": 49,
+        "epos": 17,
+        "spos": 13,
+        "sline": 49
+      }}
+    ],
+    "preds": [22],
+    "succs": [25]
+  },
+  "25": {
+    "instructions": [{"goto block_58": {
+      "eline": 82,
+      "epos": 4,
+      "spos": 4,
+      "sline": 42
+    }}],
+    "preds": [
+      23,
+      24
+    ],
+    "succs": [58]
+  },
+  "26": {
+    "instructions": [
+      {"temp$15 = current.<Node: Node right>": {
+        "eline": 53,
+        "epos": 30,
+        "spos": 12,
+        "sline": 53
+      }},
+      {"if temp$15 == null goto block_28 #7": {
+        "eline": 53,
+        "epos": 30,
+        "ifpos": "(52, 8)-(52, 30)",
+        "spos": 12,
+        "sline": 53
+      }}
+    ],
+    "preds": [
+      15,
+      17
+    ],
+    "succs": [
+      27,
+      28
+    ]
+  },
+  "27": {
+    "instructions": [{"goto block_36": {
+      "eline": 53,
+      "epos": 30,
+      "spos": 12,
+      "sline": 53
+    }}],
+    "preds": [26],
+    "succs": [36]
+  },
+  "28": {
+    "instructions": [
+      {"temp$16 = <BinarySearchTree: Node root>": {
+        "eline": 54,
+        "epos": 20,
+        "spos": 8,
+        "sline": 54
+      }},
+      {"if current == temp$16 goto block_30 #8": {
+        "eline": 54,
+        "epos": 20,
+        "ifpos": "(53, 4)-(53, 20)",
+        "spos": 8,
+        "sline": 54
+      }}
+    ],
+    "preds": [26],
+    "succs": [
+      29,
+      30
+    ]
+  },
+  "29": {
+    "instructions": [{"goto block_31": {
+      "eline": 54,
+      "epos": 20,
+      "spos": 8,
+      "sline": 54
+    }}],
+    "preds": [28],
+    "succs": [31]
+  },
+  "3": {
+    "instructions": [
+      {"parent = <BinarySearchTree: Node root>": {
+        "eline": 24,
+        "epos": 22,
+        "spos": 4,
+        "sline": 24
+      }},
+      {"current = <BinarySearchTree: Node root>": {
+        "eline": 25,
+        "epos": 23,
+        "spos": 4,
+        "sline": 25
+      }},
+      {"isLeftChild = 0": {
+        "eline": 26,
+        "epos": 31,
+        "spos": 4,
+        "sline": 26
+      }}
+    ],
+    "preds": [1],
+    "succs": [4]
+  },
+  "2": {
+    "instructions": [
+      {"temp$1 = 0": {
+        "reliable": false,
+        "eline": 21,
+        "epos": 17,
+        "spos": 6,
+        "sline": 21
+      }},
+      {"return temp$1": {
+        "eline": 22,
+        "epos": 16,
+        "spos": 4,
+        "sline": 22
+      }}
+    ],
+    "preds": [0],
+    "succs": []
+  },
+  "1": {
+    "instructions": [{"goto block_3": {
+      "eline": 21,
+      "epos": 17,
+      "spos": 6,
+      "sline": 21
+    }}],
+    "preds": [0],
+    "succs": [3]
+  },
+  "0": {
+    "instructions": [
+      {"temp$0 = <BinarySearchTree: Node root>": {
+        "eline": 21,
+        "epos": 17,
+        "spos": 6,
+        "sline": 21
+      }},
+      {"if temp$0 == null goto block_2 #0": {
+        "eline": 21,
+        "epos": 17,
+        "ifpos": "(20, 2)-(20, 17)",
+        "spos": 6,
+        "sline": 21
+      }}
+    ],
+    "preds": [],
+    "succs": [
+      1,
+      2
+    ]
+  },
+  "7": {
+    "instructions": [{"goto block_9": {
+      "eline": 29,
+      "epos": 22,
+      "spos": 8,
+      "sline": 29
+    }}],
+    "preds": [6],
+    "succs": [9]
+  },
+  "30": {
+    "instructions": [
+      {"temp$17 = current.<Node: Node left>": {
+        "eline": 55,
+        "epos": 25,
+        "spos": 6,
+        "sline": 55
+      }},
+      {"<BinarySearchTree: Node root> = temp$17": {
+        "eline": 55,
+        "epos": 9,
+        "spos": 6,
+        "sline": 55
+      }},
+      {"goto block_35": {
+        "eline": 60,
+        "epos": 5,
+        "spos": 5,
+        "sline": 54
+      }}
+    ],
+    "preds": [28],
+    "succs": [35]
+  },
+  "6": {
+    "instructions": [
+      {"parent = current": {
+        "eline": 28,
+        "epos": 10,
+        "spos": 5,
+        "sline": 28
+      }},
+      {"temp$3 = current.<Node: int data>": {
+        "eline": 29,
+        "epos": 22,
+        "spos": 8,
+        "sline": 29
+      }},
+      {"if temp$3 > id goto block_8 #2": {
+        "eline": 29,
+        "epos": 22,
+        "ifpos": "(28, 4)-(28, 22)",
+        "spos": 8,
+        "sline": 29
+      }}
+    ],
+    "preds": [4],
+    "succs": [
+      7,
+      8
+    ]
+  },
+  "5": {
+    "instructions": [{"goto block_14": {
+      "eline": 27,
+      "epos": 25,
+      "spos": 10,
+      "sline": 27
+    }}],
+    "preds": [4],
+    "succs": [14]
+  },
+  "32": {
+    "instructions": [{"goto block_33": {
+      "eline": 56,
+      "epos": 24,
+      "spos": 14,
+      "sline": 56
+    }}],
+    "preds": [31],
+    "succs": [33]
+  },
+  "4": {
+    "instructions": [
+      {"temp$2 = current.<Node: int data>": {
+        "eline": 27,
+        "epos": 25,
+        "spos": 10,
+        "sline": 27
+      }},
+      {"if temp$2 != id goto block_6 #1": {
+        "eline": 27,
+        "epos": 25,
+        "ifpos": "(26, 3)-(26, 25)",
+        "spos": 10,
+        "sline": 27
+      }}
+    ],
+    "preds": [
+      3,
+      13
+    ],
+    "succs": [
+      5,
+      6
+    ]
+  },
+  "31": {
+    "instructions": [{"if isLeftChild == 0 goto block_34 #9": {
+      "eline": 56,
+      "epos": 24,
+      "ifpos": "(55, 10)-(55, 24)",
+      "spos": 14,
+      "sline": 56
+    }}],
+    "preds": [29],
+    "succs": [
+      32,
+      34
+    ]
+  },
+  "9": {
+    "instructions": [
+      {"temp$6 = 0": {
+        "reliable": false,
+        "eline": 33,
+        "epos": 16,
+        "spos": 6,
+        "sline": 33
+      }},
+      {"isLeftChild = temp$6": {
+        "eline": 33,
+        "epos": 16,
+        "spos": 6,
+        "sline": 33
+      }},
+      {"temp$7 = current.<Node: Node right>": {
+        "eline": 34,
+        "epos": 29,
+        "spos": 6,
+        "sline": 34
+      }},
+      {"current = temp$7": {
+        "eline": 34,
+        "epos": 12,
+        "spos": 6,
+        "sline": 34
+      }}
+    ],
+    "preds": [7],
+    "succs": [10]
+  },
+  "8": {
+    "instructions": [
+      {"temp$4 = 1": {
+        "reliable": false,
+        "eline": 30,
+        "epos": 16,
+        "spos": 6,
+        "sline": 30
+      }},
+      {"isLeftChild = temp$4": {
+        "eline": 30,
+        "epos": 16,
+        "spos": 6,
+        "sline": 30
+      }},
+      {"temp$5 = current.<Node: Node left>": {
+        "eline": 31,
+        "epos": 28,
+        "spos": 6,
+        "sline": 31
+      }},
+      {"current = temp$5": {
+        "eline": 31,
+        "epos": 12,
+        "spos": 6,
+        "sline": 31
+      }},
+      {"goto block_10": {
+        "eline": 35,
+        "epos": 5,
+        "spos": 5,
+        "sline": 29
+      }}
+    ],
+    "preds": [6],
+    "succs": [10]
+  },
+  "58": {
+    "instructions": [
+      {"temp$30 = 1": {
+        "reliable": false,
+        "eline": 81,
+        "epos": 18,
+        "spos": 15,
+        "sline": 81
+      }},
+      {"return temp$30": {
+        "eline": 83,
+        "epos": 15,
+        "spos": 4,
+        "sline": 83
+      }}
+    ],
+    "preds": [
+      25,
+      35,
+      45,
+      47,
+      49,
+      57
+    ],
+    "succs": []
+  },
+  "57": {
+    "instructions": [
+      {"temp$29 = current.<Node: Node left>": {
+        "eline": 81,
+        "epos": 34,
+        "spos": 5,
+        "sline": 81
+      }},
+      {"successor.<Node: Node left> = temp$29": {
+        "eline": 81,
+        "epos": 18,
+        "spos": 15,
+        "sline": 81
+      }}
+    ],
+    "preds": [
+      52,
+      55,
+      56
+    ],
+    "succs": [58]
+  },
+  "56": {
+    "instructions": [{"parent.<Node: Node right> = successor": {
+      "eline": 79,
+      "epos": 17,
+      "spos": 13,
+      "sline": 79
+    }}],
+    "preds": [53],
+    "succs": [57]
+  },
+  "19": {
+    "instructions": [{"goto block_21": {
+      "eline": 43,
+      "epos": 20,
+      "spos": 8,
+      "sline": 43
+    }}],
+    "preds": [18],
+    "succs": [21]
+  },
+  "55": {
+    "instructions": [
+      {"parent.<Node: Node left> = successor": {
+        "eline": 77,
+        "epos": 16,
+        "spos": 13,
+        "sline": 77
+      }},
+      {"goto block_57": {
+        "eline": 80,
+        "epos": 5,
+        "spos": 11,
+        "sline": 76
+      }}
+    ],
+    "preds": [54],
+    "succs": [57]
+  },
+  "17": {
+    "instructions": [{"goto block_26": {
+      "eline": 42,
+      "epos": 47,
+      "spos": 29,
+      "sline": 42
+    }}],
+    "preds": [16],
+    "succs": [26]
+  },
+  "18": {
+    "instructions": [
+      {"temp$11 = <BinarySearchTree: Node root>": {
+        "eline": 43,
+        "epos": 20,
+        "spos": 8,
+        "sline": 43
+      }},
+      {"if current == temp$11 goto block_20 #5": {
+        "eline": 43,
+        "epos": 20,
+        "ifpos": "(42, 4)-(42, 20)",
+        "spos": 8,
+        "sline": 43
+      }}
+    ],
+    "preds": [16],
+    "succs": [
+      19,
+      20
+    ]
+  },
+  "15": {
+    "instructions": [{"goto block_26": {
+      "eline": 42,
+      "epos": 24,
+      "spos": 7,
+      "sline": 42
+    }}],
+    "preds": [14],
+    "succs": [26]
+  },
+  "16": {
+    "instructions": [
+      {"temp$10 = current.<Node: Node right>": {
+        "eline": 42,
+        "epos": 47,
+        "spos": 29,
+        "sline": 42
+      }},
+      {"if temp$10 == null goto block_18 #4": {
+        "eline": 42,
+        "epos": 47,
+        "ifpos": "(41, 3)-(41, 47)",
+        "spos": 29,
+        "sline": 42
+      }}
+    ],
+    "preds": [14],
+    "succs": [
+      17,
+      18
+    ]
+  },
+  "13": {
+    "instructions": [{"goto block_4": {
+      "eline": 39,
+      "epos": 4,
+      "spos": 4,
+      "sline": 27
+    }}],
+    "preds": [11],
+    "succs": [4]
+  },
+  "14": {
+    "instructions": [
+      {"temp$9 = current.<Node: Node left>": {
+        "eline": 42,
+        "epos": 24,
+        "spos": 7,
+        "sline": 42
+      }},
+      {"if temp$9 == null goto block_16 #4": {
+        "eline": 42,
+        "epos": 24,
+        "ifpos": "(41, 3)-(41, 47)",
+        "spos": 7,
+        "sline": 42
+      }}
+    ],
+    "preds": [5],
+    "succs": [
+      15,
+      16
+    ]
+  },
+  "11": {
+    "instructions": [{"goto block_13": {
+      "eline": 36,
+      "epos": 21,
+      "spos": 8,
+      "sline": 36
+    }}],
+    "preds": [10],
+    "succs": [13]
+  },
+  "12": {
+    "instructions": [
+      {"temp$8 = 0": {
+        "reliable": false,
+        "eline": 36,
+        "epos": 21,
+        "spos": 8,
+        "sline": 36
+      }},
+      {"return temp$8": {
+        "eline": 37,
+        "epos": 18,
+        "spos": 6,
+        "sline": 37
+      }}
+    ],
+    "preds": [10],
+    "succs": []
+  },
+  "21": {
+    "instructions": [{"if isLeftChild == 1 goto block_23 #6": {
+      "eline": 46,
+      "epos": 25,
+      "ifpos": "(45, 4)-(45, 25)",
+      "spos": 8,
+      "sline": 46
+    }}],
+    "preds": [
+      19,
+      20
+    ],
+    "succs": [
+      22,
+      23
+    ]
+  },
+  "20": {
+    "instructions": [
+      {"temp$12 = null": {
+        "reliable": false,
+        "eline": 44,
+        "epos": 9,
+        "spos": 6,
+        "sline": 44
+      }},
+      {"<BinarySearchTree: Node root> = temp$12": {
+        "eline": 44,
+        "epos": 9,
+        "spos": 6,
+        "sline": 44
+      }}
+    ],
+    "preds": [18],
+    "succs": [21]
+  },
+  "49": {
+    "instructions": [{"goto block_58": {
+      "eline": 70,
+      "epos": 53,
+      "spos": 35,
+      "sline": 70
+    }}],
+    "preds": [48],
+    "succs": [58]
+  },
+  "48": {
+    "instructions": [
+      {"temp$26 = current.<Node: Node right>": {
+        "eline": 70,
+        "epos": 53,
+        "spos": 35,
+        "sline": 70
+      }},
+      {"if temp$26 != null goto block_50 #13": {
+        "eline": 70,
+        "epos": 53,
+        "ifpos": "(69, 9)-(69, 53)",
+        "spos": 35,
+        "sline": 70
+      }}
+    ],
+    "preds": [46],
+    "succs": [
+      49,
+      50
+    ]
+  },
+  "45": {
+    "instructions": [{"goto block_58": {
+      "eline": 82,
+      "epos": 4,
+      "spos": 9,
+      "sline": 62
+    }}],
+    "preds": [
+      40,
+      43,
+      44
+    ],
+    "succs": [58]
+  },
+  "44": {
+    "instructions": [
+      {"temp$24 = current.<Node: Node right>": {
+        "eline": 68,
+        "epos": 34,
+        "spos": 6,
+        "sline": 68
+      }},
+      {"parent.<Node: Node right> = temp$24": {
+        "eline": 68,
+        "epos": 17,
+        "spos": 13,
+        "sline": 68
+      }}
+    ],
+    "preds": [41],
+    "succs": [45]
+  },
+  "47": {
+    "instructions": [{"goto block_58": {
+      "eline": 70,
+      "epos": 30,
+      "spos": 13,
+      "sline": 70
+    }}],
+    "preds": [46],
+    "succs": [58]
+  },
+  "46": {
+    "instructions": [
+      {"temp$25 = current.<Node: Node left>": {
+        "eline": 70,
+        "epos": 30,
+        "spos": 13,
+        "sline": 70
+      }},
+      {"if temp$25 != null goto block_48 #13": {
+        "eline": 70,
+        "epos": 30,
+        "ifpos": "(69, 9)-(69, 53)",
+        "spos": 13,
+        "sline": 70
+      }}
+    ],
+    "preds": [37],
+    "succs": [
+      47,
+      48
+    ]
+  },
+  "10": {
+    "instructions": [{"if current == null goto block_12 #3": {
+      "eline": 36,
+      "epos": 21,
+      "ifpos": "(35, 4)-(35, 21)",
+      "spos": 8,
+      "sline": 36
+    }}],
+    "preds": [
+      8,
+      9
+    ],
+    "succs": [
+      11,
+      12
+    ]
+  },
+  "51": {
+    "instructions": [{"goto block_53": {
+      "eline": 74,
+      "epos": 20,
+      "spos": 8,
+      "sline": 74
+    }}],
+    "preds": [50],
+    "succs": [53]
+  },
+  "52": {
+    "instructions": [
+      {"<BinarySearchTree: Node root> = successor": {
+        "eline": 75,
+        "epos": 9,
+        "spos": 6,
+        "sline": 75
+      }},
+      {"goto block_57": {
+        "eline": 80,
+        "epos": 5,
+        "spos": 5,
+        "sline": 74
+      }}
+    ],
+    "preds": [50],
+    "succs": [57]
+  },
+  "53": {
+    "instructions": [{"if isLeftChild == 0 goto block_56 #15": {
+      "eline": 76,
+      "epos": 24,
+      "ifpos": "(75, 10)-(75, 24)",
+      "spos": 14,
+      "sline": 76
+    }}],
+    "preds": [51],
+    "succs": [
+      54,
+      56
+    ]
+  },
+  "54": {
+    "instructions": [{"goto block_55": {
+      "eline": 76,
+      "epos": 24,
+      "spos": 14,
+      "sline": 76
+    }}],
+    "preds": [53],
+    "succs": [55]
+  },
+  "50": {
+    "instructions": [
+      {"temp$27 = virtualinvoke this.<BinarySearchTree: Node getSuccessor(Node)>(current)": {
+        "eline": 73,
+        "epos": 43,
+        "spos": 23,
+        "sline": 73
+      }},
+      {"successor = temp$27": {
+        "eline": 73,
+        "epos": 43,
+        "spos": 23,
+        "sline": 73
+      }},
+      {"temp$28 = <BinarySearchTree: Node root>": {
+        "eline": 74,
+        "epos": 20,
+        "spos": 8,
+        "sline": 74
+      }},
+      {"if current == temp$28 goto block_52 #14": {
+        "eline": 74,
+        "epos": 20,
+        "ifpos": "(73, 4)-(73, 20)",
+        "spos": 8,
+        "sline": 74
+      }}
+    ],
+    "preds": [48],
+    "succs": [
+      51,
+      52
+    ]
+  }
+}

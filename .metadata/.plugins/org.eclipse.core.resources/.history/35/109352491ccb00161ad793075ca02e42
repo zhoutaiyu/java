@@ -1,0 +1,51 @@
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class Copy {
+
+	public static void main(String[] args) throws IOException {
+		/**
+		 * 使用文件字符输入输出流完成文件的复制
+		 * 
+		 */
+		/*// TODO Auto-generated method stub
+		//创建输入流对象
+		FileInputStream in = new FileInputStream("数据结构主观题.doc");
+		//创建输出流对象
+		FileOutputStream out = new FileOutputStream("1.doc");
+		//读写操作
+		int len=0;
+		byte [] buffer =new byte[1024*10];
+		while((len=in.read(buffer))!=-1){
+			out.write(buffer, 0, len);
+		}
+		//关闭流资源
+		in.close();
+		out.close();*/
+		/*
+		 * 使用字符文件输入输出流的完成文件的复制
+		 */
+		/*Reader in = new FileReader("数据结构主观题.doc");
+		Writer out = new FileWriter("2.doc");
+		int len=0;
+		char [] buffer =new char[1024*10];
+		while((len=in.read(buffer))!=-1){
+			out.write(buffer, 0, len);
+		}
+		in.close();
+		out.close();*/
+		FileInputStream in =new FileInputStream("数据结构主观题.doc");
+		BufferedInputStream a = new BufferedInputStream(in);
+		FileOutputStream out = new FileOutputStream("1.doc");
+		BufferedOutputStream b =new BufferedOutputStream(out);
+		int s=0;
+		byte[] buffer = new byte[1024];
+		while((s=a.read(buffer))!=-1){
+			b.write(buffer, 0, s);
+		}
+	}
+
+}

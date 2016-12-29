@@ -1,0 +1,164 @@
+{
+  "3": {
+    "instructions": [
+      {"successsorParent = successsor": {
+        "eline": 91,
+        "epos": 19,
+        "spos": 4,
+        "sline": 91
+      }},
+      {"successsor = current": {
+        "eline": 92,
+        "epos": 13,
+        "spos": 4,
+        "sline": 92
+      }},
+      {"temp$0 = current.<Node: Node left>": {
+        "eline": 93,
+        "epos": 26,
+        "spos": 4,
+        "sline": 93
+      }},
+      {"current = temp$0": {
+        "eline": 93,
+        "epos": 10,
+        "spos": 4,
+        "sline": 93
+      }},
+      {"goto block_1": {
+        "eline": 94,
+        "epos": 3,
+        "spos": 3,
+        "sline": 90
+      }}
+    ],
+    "preds": [1],
+    "succs": [1]
+  },
+  "2": {
+    "instructions": [{"goto block_4": {
+      "eline": 90,
+      "epos": 21,
+      "spos": 9,
+      "sline": 90
+    }}],
+    "preds": [1],
+    "succs": [4]
+  },
+  "1": {
+    "instructions": [{"if current != null goto block_3 #0": {
+      "eline": 90,
+      "epos": 21,
+      "ifpos": "(89, 2)-(89, 21)",
+      "spos": 9,
+      "sline": 90
+    }}],
+    "preds": [
+      0,
+      3
+    ],
+    "succs": [
+      2,
+      3
+    ]
+  },
+  "0": {
+    "instructions": [
+      {"successsor = null": {
+        "eline": 87,
+        "epos": 24,
+        "spos": 3,
+        "sline": 87
+      }},
+      {"successsorParent = null": {
+        "eline": 88,
+        "epos": 30,
+        "spos": 3,
+        "sline": 88
+      }},
+      {"current = deleleNode.<Node: Node right>": {
+        "eline": 89,
+        "epos": 34,
+        "spos": 3,
+        "sline": 89
+      }}
+    ],
+    "preds": [],
+    "succs": [1]
+  },
+  "7": {
+    "instructions": [{"return successsor": {
+      "eline": 102,
+      "epos": 20,
+      "spos": 3,
+      "sline": 102
+    }}],
+    "preds": [
+      5,
+      6
+    ],
+    "succs": []
+  },
+  "6": {
+    "instructions": [
+      {"temp$2 = successsor.<Node: Node right>": {
+        "eline": 99,
+        "epos": 44,
+        "spos": 4,
+        "sline": 99
+      }},
+      {"successsorParent.<Node: Node left> = temp$2": {
+        "eline": 99,
+        "epos": 24,
+        "spos": 21,
+        "sline": 99
+      }},
+      {"temp$3 = deleleNode.<Node: Node right>": {
+        "eline": 100,
+        "epos": 39,
+        "spos": 4,
+        "sline": 100
+      }},
+      {"successsor.<Node: Node right> = temp$3": {
+        "eline": 100,
+        "epos": 19,
+        "spos": 15,
+        "sline": 100
+      }}
+    ],
+    "preds": [4],
+    "succs": [7]
+  },
+  "5": {
+    "instructions": [{"goto block_7": {
+      "eline": 98,
+      "epos": 33,
+      "spos": 6,
+      "sline": 98
+    }}],
+    "preds": [4],
+    "succs": [7]
+  },
+  "4": {
+    "instructions": [
+      {"temp$1 = deleleNode.<Node: Node right>": {
+        "eline": 98,
+        "epos": 33,
+        "spos": 6,
+        "sline": 98
+      }},
+      {"if successsor != temp$1 goto block_6 #1": {
+        "eline": 98,
+        "epos": 33,
+        "ifpos": "(97, 2)-(97, 33)",
+        "spos": 6,
+        "sline": 98
+      }}
+    ],
+    "preds": [2],
+    "succs": [
+      5,
+      6
+    ]
+  }
+}

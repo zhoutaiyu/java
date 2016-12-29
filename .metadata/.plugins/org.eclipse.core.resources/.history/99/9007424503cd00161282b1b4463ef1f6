@@ -1,0 +1,12 @@
+package excption;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		User user = new User();
+		Object c=user.login("cc");
+		System.out.println(c);
+	}
+
+}

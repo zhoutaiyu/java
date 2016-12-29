@@ -1,0 +1,45 @@
+{"0": {
+  "instructions": [
+    {"specialinvoke this.<java.lang.Object: void <init>()>()": {}},
+    {"this.<Node: int data> = data": {
+      "eline": 7,
+      "epos": 11,
+      "spos": 8,
+      "sline": 7
+    }},
+    {"temp$0 = null": {
+      "reliable": false,
+      "eline": 8,
+      "epos": 6,
+      "spos": 3,
+      "sline": 8
+    }},
+    {"this.<Node: Node left> = temp$0": {
+      "eline": 8,
+      "epos": 6,
+      "spos": 3,
+      "sline": 8
+    }},
+    {"temp$1 = null": {
+      "reliable": false,
+      "eline": 9,
+      "epos": 7,
+      "spos": 3,
+      "sline": 9
+    }},
+    {"this.<Node: Node right> = temp$1": {
+      "eline": 9,
+      "epos": 7,
+      "spos": 3,
+      "sline": 9
+    }},
+    {"return": {
+      "eline": 9,
+      "epos": 7,
+      "spos": 3,
+      "sline": 9
+    }}
+  ],
+  "preds": [],
+  "succs": []
+}}

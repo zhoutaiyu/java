@@ -1,0 +1,24 @@
+
+public class AtoB {
+	private Account currentAccount;
+
+	AtoB(Account account) {
+		this.currentAccount = account;
+	}
+	
+	for(Account div:list){
+		if(a.equals(div.getID())){
+			d=div;
+			c=true;
+			break;
+		}	
+		}	
+	if(c==false)
+	System.out.println("此账户不存在");
+	else{
+	System.out.println("请输入你想转账的金额");
+	b=input.nextDouble();
+	CurrentAccount.tranferOfA(d,b);
+	}
+	break;
+}

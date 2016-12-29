@@ -1,0 +1,16 @@
+//Java中输入数据的方法
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String []args){
+		Scanner input=new Scanner(System.in);
+		int num1=input.nextInt();//int类型数据输入
+		double num2=input.nextDouble();//double类型数据输入
+		float num3=input.nextFloat();//float类型数据输入
+		String oper=input.next();//String类型数据输入
+		char op=input.next().charAt(0);//char类型数据输入
+		System.out.println(num1+" "+op+" "+num2+" "+num3);
+		
+	}
+}

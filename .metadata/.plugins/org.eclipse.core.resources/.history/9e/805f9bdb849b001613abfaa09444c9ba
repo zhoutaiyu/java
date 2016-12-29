@@ -1,0 +1,16 @@
+
+public class Radio implements Soundable {
+
+	@Override
+	public void sounding() {
+		// TODO Auto-generated method stub
+		System.out.println("етЪЧ");
+	}
+
+	@Override
+	public void volume() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

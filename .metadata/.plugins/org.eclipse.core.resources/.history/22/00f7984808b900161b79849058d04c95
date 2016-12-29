@@ -1,0 +1,4 @@
+
+public enum Occurrences {
+	SINGLE, MULTIPLE
+}

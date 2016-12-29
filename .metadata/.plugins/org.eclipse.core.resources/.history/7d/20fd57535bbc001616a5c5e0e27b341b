@@ -1,0 +1,56 @@
+import java.util.Scanner;
+
+public class ATM {
+	private Account CurrentAccount = null;
+	Scanner input = new Scanner(System.in);
+
+	// 添加用户信息
+	public ATM() {}
+	
+	public boolean login(){
+		Login l=new Login();
+		CurrentAccount=l.enter();
+		if(CurrentAccount!=null)
+			return true;
+		else
+			return false;
+	}
+
+	public void select() {
+		while (true) {
+			System.out.println("***1.查询个人信息***");
+			System.out.println("***2.   存款          ***");
+			System.out.println("***3.   取款          ***");
+			System.out.println("***4.  修改密码     ***");
+			System.out.println("***5.   转账          ***");
+			System.out.println("***6.   退出          ***");
+			System.out.println("请输入您想进行操作序号");
+			switch (input.nextInt()) {
+			//查询个人信息
+			case 1:
+				System.out.println(CurrentAccount.toString());
+				break;
+			//存款
+			case 2:
+				break;
+			//取款
+			case 3:
+				new WithDraw(this.CurrentAccount).withDraw();
+				break;
+			// 密码修改
+			case 4:
+
+				break;
+			//转账
+			case 5:
+
+				break;
+			case 6:
+				input.close();
+				System.out.println("欢迎您的使用，再见");
+				System.exit(0);
+			}
+		}
+	}
+
+}

@@ -1,0 +1,94 @@
+import java.util.Scanner;
+
+//通过ATM机联系数据库来影响账户信息
+public class ATMServer {
+	private Account CurrentAccount = null;
+	private Scanner input = new Scanner(System.in);
+	private String choice = "Y";
+	private Login l;
+	private Database database = new Database();
+
+	// 添加用户信息
+	public ATMServer() {
+
+	}
+
+	public void work() {
+		login();
+		meue();
+	}
+
+	public void login() {
+		while (true) {
+			l = new Login(database.getList());
+			CurrentAccount = l.enter();
+			if (CurrentAccount != null)
+				break;
+		}
+	}
+
+	public void meue() {
+		while (choice.equals("Y")) {
+			prepromot();
+			switch (input.nextInt()) {
+			// 查询个人信息
+			case 1:
+				System.out.println(CurrentAccount.toString());
+				break;
+			// 存款
+			case 2:
+				new Deposit(this.CurrentAccount).deposit();
+				break;
+			// 取款
+			case 3:
+				new WithDraw(this.CurrentAccount).withDraw();
+				break;
+			// 密码修改
+			case 4:
+				new ModPassword(this.CurrentAccount).modify();
+				break;
+			// 转账
+			case 5:
+				new AtoB(this.CurrentAccount).aTOb();
+				// System.out.println(this.CurrentAccount);验证是否完成事务
+				// System.out.println(a);
+				break;
+			case 6:
+				input.close();
+				System.out.println("欢迎您的使用，再见");
+				System.exit(0);
+			}
+			promot();
+		}
+	}
+
+	public void prepromot(){
+		System.out.println("***1.查询个人信息   ***");
+		System.out.println("***2.   存款          ***");
+		System.out.println("***3.   取款          ***");
+		System.out.println("***4.  修改密码     ***");
+		System.out.println("***5.   转账          ***");
+		System.out.println("***6.   退出          ***");
+		System.out.println("请输入您想进行操作序号");
+	}
+	// 后续提示
+	public void promot() {
+		System.out.println("是否继续进行功能操作？");
+		System.out.println("是的话请按Y,if not,退出请按其他键");
+		String t = input.next();
+		if (t.equals("Y") != true) {
+			this.choice = "";
+			System.out.println("再见，别忘了再来看小亮");
+			Clear.clear();
+		}
+	}
+
+	public Database getDatabase() {
+		return database;
+	}
+
+	public void setDatabase(Database database) {
+		this.database = database;
+	}
+
+}

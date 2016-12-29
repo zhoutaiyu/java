@@ -1,0 +1,42 @@
+[
+  {
+    "codes": "public class Node{ ",
+    "blocks": []
+  },
+  {
+    "codes": "\tint data; ",
+    "blocks": []
+  },
+  {
+    "codes": "\tNode left; ",
+    "blocks": []
+  },
+  {
+    "codes": "\tNode right;\t ",
+    "blocks": []
+  },
+  {
+    "codes": "\tpublic Node(int data){ ",
+    "blocks": []
+  },
+  {
+    "codes": "\t\tthis.data = data; ",
+    "blocks": [0]
+  },
+  {
+    "codes": "\t\tleft = null; ",
+    "blocks": [0]
+  },
+  {
+    "codes": "\t\tright = null; ",
+    "blocks": [0]
+  },
+  {
+    "codes": "\t} ",
+    "blocks": []
+  },
+  {
+    "codes": "} ",
+    "blocks": []
+  }
+]

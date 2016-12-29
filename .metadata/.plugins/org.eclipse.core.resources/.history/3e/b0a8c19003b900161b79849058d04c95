@@ -1,0 +1,29 @@
+import static org.junit.Assert.*;
+
+import java.lang.reflect.InvocationTargetException;
+
+public class Test {
+
+	@org.junit.Test
+	public void test() {
+		String t = null;
+		OptionSpecification s=new OptionSpecification(t, null, null, null, false, null);
+		try {
+			s.activateAndConsumeParameters(null);
+		} catch (InvocationTargetException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (InstantiationException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		s.getOptionId();
+		s.getSwitch();
+		s.isLooseParametersSpecification();
+		s.validate();
+	}
+
+}

@@ -1,0 +1,9 @@
+
+public class H implements Hello {
+
+	public void run() {
+			System.out.println("");
+
+	}
+
+}

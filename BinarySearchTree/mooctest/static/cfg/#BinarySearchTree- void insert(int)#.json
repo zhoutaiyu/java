@@ -1,0 +1,266 @@
+{
+  "3": {
+    "instructions": [{"current = <BinarySearchTree: Node root>": {
+      "eline": 110,
+      "epos": 22,
+      "spos": 3,
+      "sline": 110
+    }}],
+    "preds": [1],
+    "succs": [4]
+  },
+  "2": {
+    "instructions": [
+      {"<BinarySearchTree: Node root> = newNode": {
+        "eline": 107,
+        "epos": 7,
+        "spos": 4,
+        "sline": 107
+      }},
+      {"return": {
+        "eline": 108,
+        "epos": 10,
+        "spos": 4,
+        "sline": 108
+      }}
+    ],
+    "preds": [0],
+    "succs": []
+  },
+  "10": {
+    "instructions": [{"goto block_14": {
+      "eline": 126,
+      "epos": 4,
+      "spos": 4,
+      "sline": 114
+    }}],
+    "preds": [8],
+    "succs": [14]
+  },
+  "1": {
+    "instructions": [{"goto block_3": {
+      "eline": 106,
+      "epos": 15,
+      "spos": 6,
+      "sline": 106
+    }}],
+    "preds": [0],
+    "succs": [3]
+  },
+  "0": {
+    "instructions": [
+      {"temp$0 = new Node": {
+        "eline": 105,
+        "epos": 30,
+        "spos": 3,
+        "sline": 105
+      }},
+      {"specialinvoke temp$0.<Node: void <init>(int)>(id)": {
+        "eline": 105,
+        "epos": 29,
+        "spos": 18,
+        "sline": 105
+      }},
+      {"newNode = temp$0": {
+        "eline": 105,
+        "epos": 29,
+        "spos": 18,
+        "sline": 105
+      }},
+      {"temp$1 = <BinarySearchTree: Node root>": {
+        "eline": 106,
+        "epos": 15,
+        "spos": 6,
+        "sline": 106
+      }},
+      {"if temp$1 == null goto block_2 #0": {
+        "eline": 106,
+        "epos": 15,
+        "ifpos": "(105, 2)-(105, 15)",
+        "spos": 6,
+        "sline": 106
+      }}
+    ],
+    "preds": [],
+    "succs": [
+      1,
+      2
+    ]
+  },
+  "7": {
+    "instructions": [
+      {"temp$3 = current.<Node: Node left>": {
+        "eline": 115,
+        "epos": 27,
+        "spos": 5,
+        "sline": 115
+      }},
+      {"current = temp$3": {
+        "eline": 115,
+        "epos": 11,
+        "spos": 5,
+        "sline": 115
+      }},
+      {"if current == null goto block_9 #2": {
+        "eline": 116,
+        "epos": 20,
+        "ifpos": "(115, 4)-(115, 20)",
+        "spos": 8,
+        "sline": 116
+      }}
+    ],
+    "preds": [5],
+    "succs": [
+      8,
+      9
+    ]
+  },
+  "6": {
+    "instructions": [{"goto block_11": {
+      "eline": 114,
+      "epos": 21,
+      "spos": 7,
+      "sline": 114
+    }}],
+    "preds": [5],
+    "succs": [11]
+  },
+  "5": {
+    "instructions": [
+      {"parent = current": {
+        "eline": 113,
+        "epos": 9,
+        "spos": 4,
+        "sline": 113
+      }},
+      {"temp$2 = current.<Node: int data>": {
+        "eline": 114,
+        "epos": 21,
+        "spos": 7,
+        "sline": 114
+      }},
+      {"if id < temp$2 goto block_7 #1": {
+        "eline": 114,
+        "epos": 21,
+        "ifpos": "(113, 3)-(113, 21)",
+        "spos": 7,
+        "sline": 114
+      }}
+    ],
+    "preds": [4],
+    "succs": [
+      6,
+      7
+    ]
+  },
+  "4": {
+    "instructions": [{"goto block_5": {
+      "eline": 112,
+      "epos": 12,
+      "spos": 9,
+      "sline": 112
+    }}],
+    "preds": [
+      3,
+      14
+    ],
+    "succs": [5]
+  },
+  "9": {
+    "instructions": [
+      {"parent.<Node: Node left> = newNode": {
+        "eline": 117,
+        "epos": 16,
+        "spos": 13,
+        "sline": 117
+      }},
+      {"return": {
+        "eline": 118,
+        "epos": 12,
+        "spos": 6,
+        "sline": 118
+      }}
+    ],
+    "preds": [7],
+    "succs": []
+  },
+  "8": {
+    "instructions": [{"goto block_10": {
+      "eline": 116,
+      "epos": 20,
+      "spos": 8,
+      "sline": 116
+    }}],
+    "preds": [7],
+    "succs": [10]
+  },
+  "13": {
+    "instructions": [
+      {"parent.<Node: Node right> = newNode": {
+        "eline": 123,
+        "epos": 17,
+        "spos": 13,
+        "sline": 123
+      }},
+      {"return": {
+        "eline": 124,
+        "epos": 12,
+        "spos": 6,
+        "sline": 124
+      }}
+    ],
+    "preds": [11],
+    "succs": []
+  },
+  "14": {
+    "instructions": [{"goto block_4": {
+      "eline": 127,
+      "epos": 3,
+      "spos": 3,
+      "sline": 112
+    }}],
+    "preds": [
+      10,
+      12
+    ],
+    "succs": [4]
+  },
+  "11": {
+    "instructions": [
+      {"temp$4 = current.<Node: Node right>": {
+        "eline": 121,
+        "epos": 28,
+        "spos": 5,
+        "sline": 121
+      }},
+      {"current = temp$4": {
+        "eline": 121,
+        "epos": 11,
+        "spos": 5,
+        "sline": 121
+      }},
+      {"if current == null goto block_13 #3": {
+        "eline": 122,
+        "epos": 20,
+        "ifpos": "(121, 4)-(121, 20)",
+        "spos": 8,
+        "sline": 122
+      }}
+    ],
+    "preds": [6],
+    "succs": [
+      12,
+      13
+    ]
+  },
+  "12": {
+    "instructions": [{"goto block_14": {
+      "eline": 122,
+      "epos": 20,
+      "spos": 8,
+      "sline": 122
+    }}],
+    "preds": [11],
+    "succs": [14]
+  }
+}

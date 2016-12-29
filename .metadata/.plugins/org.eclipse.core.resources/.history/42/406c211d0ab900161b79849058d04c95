@@ -1,0 +1,48 @@
+import static org.junit.Assert.*;
+
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+
+public class Test {
+
+	@org.junit.Test
+	public void test() {
+		String t = null;
+		Class<?> c = null;
+		ParameterConsumption p1=new ParameterConsumption(null);
+		ParameterConsumption p2=new ParameterConsumption(null, false);
+		ParameterConsumption p4=new ParameterConsumption(null,c);
+		ParameterConsumption p3=new ParameterConsumption(null, t);
+		p1.getType();
+		p2.getDelimiter();
+		p3.getToggleValue();
+		p4.getSubsetClass();
+		Occurrences o = null;
+		Method method=null;;
+		//Switch
+		Switch s=new Switch("1", "2");
+		s.getLongSwitch();
+		s.getShortSwitch();
+		System.out.println(s.matches("3"));
+		System.out.println(s.matches("1"));
+		
+		OptionSpecification op=new OptionSpecification(t, method,s, p1, false, o);
+		/*try {
+			op.activateAndConsumeParameters(null);
+		} catch (InvocationTargetException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (InstantiationException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		op.getOptionId();
+		op.getSwitch();
+		op.isLooseParametersSpecification();
+		op.validate();*/
+	}
+
+}

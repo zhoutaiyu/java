@@ -1,0 +1,10 @@
+
+public class H implements Hello {
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

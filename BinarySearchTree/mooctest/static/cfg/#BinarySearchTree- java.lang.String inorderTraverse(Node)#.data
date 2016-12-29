@@ -1,0 +1,46 @@
+[
+  {
+    "codes": "\t\t\tdisplay(root.right, sb); ",
+    "blocks": []
+  },
+  {
+    "codes": "\t\t} ",
+    "blocks": []
+  },
+  {
+    "codes": "\t} ",
+    "blocks": []
+  },
+  {
+    "codes": "\t ",
+    "blocks": []
+  },
+  {
+    "codes": "\tpublic String inorderTraverse(Node root){ ",
+    "blocks": []
+  },
+  {
+    "codes": "\t\tStringBuilder sb = new StringBuilder();  ",
+    "blocks": [0]
+  },
+  {
+    "codes": "\t\tthis.display(root, sb); ",
+    "blocks": [0]
+  },
+  {
+    "codes": "\t\treturn sb.toString(); ",
+    "blocks": [0]
+  },
+  {
+    "codes": "\t} ",
+    "blocks": []
+  },
+  {
+    "codes": "} ",
+    "blocks": []
+  },
+  {
+    "codes": " ",
+    "blocks": []
+  }
+]

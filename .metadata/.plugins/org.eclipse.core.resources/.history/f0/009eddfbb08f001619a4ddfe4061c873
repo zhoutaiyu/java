@@ -1,0 +1,109 @@
+package time;
+
+import java.util.Scanner;
+
+public  class Time{
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+	    int n=input.nextInt();
+	    int x;
+	    int []array = new int [6];
+	    int cnt=0;
+	    int m=Math.abs(n);
+	    if(n>=-100000&&n<=100000)
+	    {
+	    	do
+	    	{
+	    		x=m%10;
+	    		array[cnt]=x;
+	    		cnt++;
+	    		m=m/10;
+	    	}while(m>0);
+	    	if(n<0)
+    		{
+	    		System.out.print("fu");
+	    		for(int i=cnt-1;i>=0;i--)
+		    	{
+		    		switch(array[i])
+		    		{
+		    		case 0:System.out.print(" ling");
+		    		break;
+		    		case 1:System.out.print(" yi");
+		    		break;
+		    		case 2:System.out.print(" er");
+		    		break;
+		    		case 3:System.out.print(" san");
+		    		break;
+		    		case 4:System.out.print(" si");
+		    		break;
+		    		case 5:System.out.print(" wu");
+		    		break;
+		    		case 6:System.out.print(" liu");
+		    		break;
+		    		case 7:System.out.print(" qi");
+		    		break;
+		    		case 8:System.out.print(" ba");
+		    		break;
+		    		case 9:System.out.print(" jiu");
+		    		break;	
+		    		}
+		    	}
+    		}
+	    	else
+	    	{
+	    		switch(array[cnt-1])
+	    		{
+	    		case 0:System.out.print("ling");
+	    		break;
+	    		case 1:System.out.print("yi");
+	    		break;
+	    		case 2:System.out.print("er");
+	    		break;
+	    		case 3:System.out.print("san");
+	    		break;
+	    		case 4:System.out.print("si");
+	    		break;
+	    		case 5:System.out.print("wu");
+	    		break;
+	    		case 6:System.out.print("liu");
+	    		break;
+	    		case 7:System.out.print("qi");
+	    		break;
+	    		case 8:System.out.print("ba");
+	    		break;
+	    		case 9:System.out.print("jiu");
+	    		break;	 		
+	    		}
+	    		for(int i=cnt-2;i>=0;i--)
+		    	{
+		    		switch(array[i])
+		    		{
+		    		case 0:System.out.print(" ling");
+		    		break;
+		    		case 1:System.out.print(" yi");
+		    		break;
+		    		case 2:System.out.print(" er");
+		    		break;
+		    		case 3:System.out.print(" san");
+		    		break;
+		    		case 4:System.out.print(" si");
+		    		break;
+		    		case 5:System.out.print(" wu");
+		    		break;
+		    		case 6:System.out.print(" liu");
+		    		break;
+		    		case 7:System.out.print(" qi");
+		    		break;
+		    		case 8:System.out.print(" ba");
+		    		break;
+		    		case 9:System.out.print(" jiu");
+		    		break;	
+		    		}
+		    	}
+	    	}
+	    	
+	    }
+	}
+
+}
